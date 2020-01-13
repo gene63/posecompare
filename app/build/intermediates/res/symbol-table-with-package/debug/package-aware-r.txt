@@ -1066,7 +1066,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id butt
 id buttonPanel
 id center
 id center_horizontal
@@ -1152,9 +1151,11 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id reset
 id right
 id right_icon
 id right_side
+id save
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type

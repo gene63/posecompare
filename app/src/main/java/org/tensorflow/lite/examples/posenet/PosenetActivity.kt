@@ -157,7 +157,7 @@ class PosenetActivity :
 
   /** Whether the current camera device supports Flash or not.    */
   private var flashSupported = false
-  
+
 
   /** Orientation of the camera sensor.   */
   private var sensorOrientation: Int? = null
@@ -223,11 +223,17 @@ class PosenetActivity :
 
     val view: View = inflater!!.inflate(R.layout.activity_posenet, container, false)
 
-    view.butt.setOnClickListener { view ->
+    view.save.setOnClickListener { view ->
 
       copy = person
 
       mybool = true
+
+    }
+
+    view.reset.setOnClickListener { view ->
+
+      mybool = false
 
     }
 
@@ -511,17 +517,29 @@ class PosenetActivity :
   }
 
   /** Set the paint color and size.    */
-  private fun setPaint1() {
+  private fun setPaintRED() {
     paint1.color = Color.RED
     paint1.textSize = 80.0f
     paint1.strokeWidth = 8.0f
   }
 
-  private fun setPaint2() {
+  private fun setPaintGREEN() {
     paint2.color = Color.GREEN
     paint2.textSize = 80.0f
     paint2.strokeWidth = 8.0f
   }
+  private fun setPaintWHITE() {
+    paint2.color = Color.WHITE
+    paint2.textSize = 80.0f
+    paint2.strokeWidth = 8.0f
+  }
+
+  private fun setPaintBLUE() {
+    paint2.color = Color.BLUE
+    paint2.textSize = 80.0f
+    paint2.strokeWidth = 8.0f
+  }
+
 
   /** Draw bitmap on Canvas.   */
   private fun draw(canvas: Canvas, person: Person, bitmap: Bitmap) {
@@ -547,7 +565,7 @@ class PosenetActivity :
     right = left + screenWidth
     bottom = top + screenHeight
 
-    if(mybool==false){ setPaint1() } else {setPaint2()}
+    if(mybool==false){ setPaintRED() } else {setPaintWHITE()}
 
     canvas.drawBitmap(
       bitmap,
@@ -609,13 +627,23 @@ class PosenetActivity :
         }
       }
 
+    if(mybool) {
+      canvas.drawText(
+        "Score: %.2f".format(Math.abs(100 * person.score - 100 * copy.score)),
+        (15.0f * widthRatio),
+        (30.0f * heightRatio + bottom),
+        paint1
+      )
+    }
+    else {
+      canvas.drawText(
+        "Score: %.2f".format(0.00),
+        (15.0f * widthRatio),
+        (30.0f * heightRatio + bottom),
+        paint1
+      )
+    }
 
-    canvas.drawText(
-      "Score: %.2f".format(person.score),
-      (15.0f * widthRatio),
-      (30.0f * heightRatio + bottom),
-      paint1
-    )
     canvas.drawText(
       "Device: %s".format(posenet.device),
       (15.0f * widthRatio),

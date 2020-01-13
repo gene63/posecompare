@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 14 00:09:56 KST 2020
+#Tue Jan 14 00:49:34 KST 2020
 4.path=lib/armeabi-v7a/libtensorflowlite_jni.so
 8.set=ASSET
 6.path=lib/arm64-v8a/libtensorflowlite_jni.so
