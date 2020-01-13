@@ -661,6 +661,8 @@ class PosenetActivity :
     surfaceHolder!!.unlockCanvasAndPost(canvas)
   }
 
+
+
   /** Process image using Posenet library.   */
   private fun processImage(bitmap: Bitmap) {
     // Crop bitmap.
