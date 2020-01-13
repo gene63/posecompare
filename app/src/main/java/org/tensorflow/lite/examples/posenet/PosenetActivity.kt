@@ -56,7 +56,10 @@ import android.view.SurfaceHolder
 import android.view.SurfaceView
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_posenet.*
+import kotlinx.android.synthetic.main.activity_posenet.view.*
 import java.util.concurrent.Semaphore
 import java.util.concurrent.TimeUnit
 import kotlin.math.abs
@@ -84,14 +87,16 @@ class PosenetActivity :
     Pair(BodyPart.RIGHT_KNEE, BodyPart.RIGHT_ANKLE)
   )
 
+  private var copy = Person()
   /** Threshold for confidence score. */
   private val minConfidence = 0.5
 
   /** Radius of circle used to draw keypoints.  */
   private val circleRadius = 8.0f
-
+  private var mybool = false
   /** Paint class holds the style and color information to draw geometries,text and bitmaps. */
-  private var paint = Paint()
+  private var paint1 = Paint()
+  private var paint2 = Paint()
 
   /** A shape for extracting frame data.   */
   private val PREVIEW_WIDTH = 640
@@ -108,6 +113,8 @@ class PosenetActivity :
 
   /** A [CameraCaptureSession] for camera preview.   */
   private var captureSession: CameraCaptureSession? = null
+
+  private var person = Person()
 
   /** A reference to the opened [CameraDevice].    */
   private var cameraDevice: CameraDevice? = null
@@ -150,9 +157,12 @@ class PosenetActivity :
 
   /** Whether the current camera device supports Flash or not.    */
   private var flashSupported = false
+  
 
   /** Orientation of the camera sensor.   */
   private var sensorOrientation: Int? = null
+
+
 
   /** Abstract interface to someone holding a display surface.    */
   private var surfaceHolder: SurfaceHolder? = null
@@ -207,11 +217,24 @@ class PosenetActivity :
     activity?.runOnUiThread { Toast.makeText(activity, text, Toast.LENGTH_SHORT).show() }
   }
 
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-  ): View? = inflater.inflate(R.layout.activity_posenet, container, false)
+
+  override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                            savedInstanceState: Bundle?): View? {
+
+    val view: View = inflater!!.inflate(R.layout.activity_posenet, container, false)
+
+    view.butt.setOnClickListener { view ->
+
+      copy = person
+
+      mybool = true
+
+    }
+
+    // Return the fragment view/layout
+    return view
+  }
+
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     surfaceView = view.findViewById(R.id.surfaceView)
@@ -488,10 +511,16 @@ class PosenetActivity :
   }
 
   /** Set the paint color and size.    */
-  private fun setPaint() {
-    paint.color = Color.RED
-    paint.textSize = 80.0f
-    paint.strokeWidth = 8.0f
+  private fun setPaint1() {
+    paint1.color = Color.RED
+    paint1.textSize = 80.0f
+    paint1.strokeWidth = 8.0f
+  }
+
+  private fun setPaint2() {
+    paint2.color = Color.GREEN
+    paint2.textSize = 80.0f
+    paint2.strokeWidth = 8.0f
   }
 
   /** Draw bitmap on Canvas.   */
@@ -518,12 +547,13 @@ class PosenetActivity :
     right = left + screenWidth
     bottom = top + screenHeight
 
-    setPaint()
+    if(mybool==false){ setPaint1() } else {setPaint2()}
+
     canvas.drawBitmap(
       bitmap,
       Rect(0, 0, bitmap.width, bitmap.height),
       Rect(left, top, right, bottom),
-      paint
+      paint1
     )
 
     val widthRatio = screenWidth.toFloat() / MODEL_WIDTH
@@ -535,7 +565,7 @@ class PosenetActivity :
         val position = keyPoint.position
         val adjustedX: Float = position.x.toFloat() * widthRatio + left
         val adjustedY: Float = position.y.toFloat() * heightRatio + top
-        canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint)
+        canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint1)
       }
     }
 
@@ -549,28 +579,54 @@ class PosenetActivity :
           person.keyPoints[line.first.ordinal].position.y.toFloat() * heightRatio + top,
           person.keyPoints[line.second.ordinal].position.x.toFloat() * widthRatio + left,
           person.keyPoints[line.second.ordinal].position.y.toFloat() * heightRatio + top,
-          paint
+          paint1
         )
       }
     }
+      if(mybool) {
+        for (keyPoint in copy.keyPoints) {
+          if (keyPoint.score > minConfidence) {
+            val position = keyPoint.position
+            val adjustedX: Float = position.x.toFloat() * widthRatio + left
+            val adjustedY: Float = position.y.toFloat() * heightRatio + top
+            canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint2)
+          }
+        }
+
+        for (line in bodyJoints) {
+          if (
+            (copy.keyPoints[line.first.ordinal].score > minConfidence) and
+            (copy.keyPoints[line.second.ordinal].score > minConfidence)
+          ) {
+            canvas.drawLine(
+              copy.keyPoints[line.first.ordinal].position.x.toFloat() * widthRatio + left,
+              copy.keyPoints[line.first.ordinal].position.y.toFloat() * heightRatio + top,
+              copy.keyPoints[line.second.ordinal].position.x.toFloat() * widthRatio + left,
+              copy.keyPoints[line.second.ordinal].position.y.toFloat() * heightRatio + top,
+              paint2
+            )
+          }
+        }
+      }
+
 
     canvas.drawText(
       "Score: %.2f".format(person.score),
       (15.0f * widthRatio),
       (30.0f * heightRatio + bottom),
-      paint
+      paint1
     )
     canvas.drawText(
       "Device: %s".format(posenet.device),
       (15.0f * widthRatio),
       (50.0f * heightRatio + bottom),
-      paint
+      paint1
     )
     canvas.drawText(
       "Time: %.2f ms".format(posenet.lastInferenceTimeNanos * 1.0f / 1_000_000),
       (15.0f * widthRatio),
       (70.0f * heightRatio + bottom),
-      paint
+      paint1
     )
 
     // Draw!
@@ -586,7 +642,9 @@ class PosenetActivity :
     val scaledBitmap = Bitmap.createScaledBitmap(croppedBitmap, MODEL_WIDTH, MODEL_HEIGHT, true)
 
     // Perform inference.
-    val person = posenet.estimateSinglePose(scaledBitmap)
+    person = posenet.estimateSinglePose(scaledBitmap)
+
+
     val canvas: Canvas = surfaceHolder!!.lockCanvas()
 
     draw(canvas, person, scaledBitmap)

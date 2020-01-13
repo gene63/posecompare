@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\3rd\\examples\\lite\\examples\\posenet\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\c4be962ad291345217cae826af1371eb\\res\\values\\values.xml",
@@ -37,6 +37,25 @@
                         "startOffsets": "28911,29241,29380,29427,29482,30076,30130,30182,30231,30292",
                         "endColumns": "39,42,46,54,44,53,51,48,60,49",
                         "endOffsets": "28946,29279,29422,29477,29522,30125,30177,30226,30287,30337"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,9",
+                        "startColumns": "2,2",
+                        "startOffsets": "53,356",
+                        "endLines": "8,15",
+                        "endColumns": "10,10",
+                        "endOffsets": "352,718"
+                    },
+                    "to": {
+                        "startLines": "603,2032",
+                        "startColumns": "4,4",
+                        "startOffsets": "37644,130261",
+                        "endLines": "608,2038",
+                        "endColumns": "10,10",
+                        "endOffsets": "37938,130617"
                     }
                 },
                 {
@@ -116,6 +135,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "17,18",
+                        "startColumns": "2,2",
+                        "startOffsets": "674,718",
+                        "endColumns": "42,49",
+                        "endOffsets": "714,765"
+                    },
+                    "to": {
+                        "startLines": "394,402",
+                        "startColumns": "4,4",
+                        "startOffsets": "23346,24002",
+                        "endColumns": "44,51",
+                        "endOffsets": "23386,24049"
+                    }
+                },
+                {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\f250dcea7259ca19b7de14ca67efb446\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178,6,13,56,88,125",
@@ -135,24 +171,26 @@
                     }
                 },
                 {
-                    "source": "D:\\3rd\\examples\\lite\\examples\\posenet\\android\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "17,18",
-                        "startColumns": "2,2",
-                        "startOffsets": "674,718",
-                        "endColumns": "42,49",
-                        "endOffsets": "714,765"
+                        "startLines": "16,20,18,21,17,19",
+                        "startColumns": "2,2,2,2,2,2",
+                        "startOffsets": "672,1162,899,1316,806,1014",
+                        "endLines": "16,20,18,25,17,19",
+                        "endColumns": "132,152,113,11,91,146",
+                        "endOffsets": "802,1312,1010,1560,895,1158"
                     },
                     "to": {
-                        "startLines": "394,402",
-                        "startColumns": "4,4",
-                        "startOffsets": "23346,24002",
-                        "endColumns": "44,51",
-                        "endOffsets": "23386,24049"
+                        "startLines": "569,572,575,579,590,591",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "34115,34516,34862,35430,36558,36652",
+                        "endLines": "569,572,575,583,590,591",
+                        "endColumns": "134,154,115,11,93,148",
+                        "endOffsets": "34245,34666,34973,35670,36647,36796"
                     }
                 },
                 {
-                    "source": "D:\\3rd\\examples\\lite\\examples\\posenet\\android\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "19,17,18,20,21",
                         "startColumns": "2,2,2,2,2",
@@ -185,44 +223,6 @@
                         "endLines": "391,392,393,403,404,405,485,4295",
                         "endColumns": "58,47,55,74,75,71,65,24",
                         "endOffsets": "23237,23285,23341,24124,24200,24272,29046,275471"
-                    }
-                },
-                {
-                    "source": "D:\\3rd\\examples\\lite\\examples\\posenet\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "16,20,18,21,17,19",
-                        "startColumns": "2,2,2,2,2,2",
-                        "startOffsets": "672,1162,899,1316,806,1014",
-                        "endLines": "16,20,18,25,17,19",
-                        "endColumns": "132,152,113,11,91,146",
-                        "endOffsets": "802,1312,1010,1560,895,1158"
-                    },
-                    "to": {
-                        "startLines": "569,572,575,579,590,591",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "34115,34516,34862,35430,36558,36652",
-                        "endLines": "569,572,575,583,590,591",
-                        "endColumns": "134,154,115,11,93,148",
-                        "endOffsets": "34245,34666,34973,35670,36647,36796"
-                    }
-                },
-                {
-                    "source": "D:\\3rd\\examples\\lite\\examples\\posenet\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,9",
-                        "startColumns": "2,2",
-                        "startOffsets": "53,356",
-                        "endLines": "8,15",
-                        "endColumns": "10,10",
-                        "endOffsets": "352,718"
-                    },
-                    "to": {
-                        "startLines": "603,2032",
-                        "startColumns": "4,4",
-                        "startOffsets": "37644,130261",
-                        "endLines": "608,2038",
-                        "endColumns": "10,10",
-                        "endOffsets": "37938,130617"
                     }
                 }
             ]

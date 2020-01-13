@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\3rd\\examples\\lite\\examples\\posenet\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
+            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\c4be962ad291345217cae826af1371eb\\res\\values-am\\values-am.xml",
