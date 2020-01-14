@@ -107,7 +107,7 @@ class PosenetActivity :
   /**하단 글자를 위한 페인트**/
   private  var charPaint = Paint()
 
-  
+  var mybool2 = true
 
   /**현재시간 변수 선언**/
   var starttime = 0
@@ -745,22 +745,28 @@ class PosenetActivity :
       if (score > 85.00) {
         setPaintGREEN()
         mediaplayer?.pause()
+        mybool2 = true
       } else if (score > 75.00) {
         setPaintYELLOW()
         mediaplayer?.pause()
+        mybool2 = true
       } else {
         setPaintRED()
 
 
 
-        var mediaplayer = MediaPlayer.create(context,R.raw.alarm)
-        mediaplayer?.start()
 
+        if (mybool2) {
+          MediaPlayer.create(context,R.raw.alarm)
+          mediaplayer?.start()
+          mybool2 = false
+        }
       }
     }
     else{
       setPaintWHITE()
       mediaplayer?.pause()
+      mybool2 = true
     }
 
     /**고정 할 자세 그리기**/
