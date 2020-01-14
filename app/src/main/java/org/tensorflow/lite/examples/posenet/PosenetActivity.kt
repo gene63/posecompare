@@ -72,6 +72,7 @@ import java.util.*
 import kotlin.concurrent.timer
 import kotlin.math.absoluteValue
 import kotlin.math.pow
+import android.media.MediaPlayer
 
 class PosenetActivity :
   Fragment(),
@@ -105,6 +106,8 @@ class PosenetActivity :
 
   /**하단 글자를 위한 페인트**/
   private  var charPaint = Paint()
+
+  
 
   /**현재시간 변수 선언**/
   var starttime = 0
@@ -148,6 +151,9 @@ class PosenetActivity :
 
   /** A counter to keep count of total frames.  */
   private var frameCounter = 0
+
+  /** mediaplayer**/
+  var mediaplayer = MediaPlayer()
 
   /** An IntArray to save image data in ARGB8888 format  */
   private lateinit var rgbBytes: IntArray
@@ -738,14 +744,23 @@ class PosenetActivity :
     if(mybool) {
       if (score > 85.00) {
         setPaintGREEN()
+        mediaplayer?.pause()
       } else if (score > 75.00) {
         setPaintYELLOW()
+        mediaplayer?.pause()
       } else {
         setPaintRED()
+
+
+
+        var mediaplayer = MediaPlayer.create(context,R.raw.alarm)
+        mediaplayer?.start()
+
       }
     }
     else{
       setPaintWHITE()
+      mediaplayer?.pause()
     }
 
     /**고정 할 자세 그리기**/

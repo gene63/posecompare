@@ -410,12 +410,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/posenet/PosenetActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="660" column="40" selection-start-line="660" selection-start-column="40" selection-end-line="660" selection-end-column="40" />
+            <state relative-caret-position="292">
+              <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
               <folding>
-                <element signature="e#677#2731#0" expanded="true" />
-                <element signature="e#10825#10863#1" expanded="true" />
-                <element signature="e#12955#12987#1" expanded="true" />
+                <element signature="e#677#2797#0" expanded="true" />
+                <element signature="e#10945#10983#1" expanded="true" />
+                <element signature="e#13075#13107#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -432,8 +432,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cpu</find>
-      <find>surfaceview</find>
       <find>surfaceHolder</find>
       <find>confidence</find>
       <find>estimate</find>
@@ -462,6 +460,8 @@
       <find>total</find>
       <find>charpaint</find>
       <find>score</find>
+      <find>mediap</find>
+      <find>diffOfFace</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -506,6 +506,22 @@
             <path>
               <item name="posecompare" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="posecompare" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="posecompare" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="posenet" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="posecompare" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="posecompare" type="1abcf292:AndroidViewProjectNode" />
@@ -672,7 +688,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -685,7 +701,7 @@
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50159913" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Build" order="4" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49840087" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Logcat" order="6" />
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" />
@@ -1011,12 +1027,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/posenet/PosenetActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="660" column="40" selection-start-line="660" selection-start-column="40" selection-end-line="660" selection-end-column="40" />
+        <state relative-caret-position="292">
+          <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
           <folding>
-            <element signature="e#677#2731#0" expanded="true" />
-            <element signature="e#10825#10863#1" expanded="true" />
-            <element signature="e#12955#12987#1" expanded="true" />
+            <element signature="e#677#2797#0" expanded="true" />
+            <element signature="e#10945#10983#1" expanded="true" />
+            <element signature="e#13075#13107#1" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,596 +1,602 @@
-pat_Button_Colored
-"Base_Widget_AppCompat_Button_Small
--Base_Widget_AppCompat_CompoundButton_CheckBox
-0Base_Widget_AppCompat_CompoundButton_RadioButton
-+Base_Widget_AppCompat_CompoundButton_Switch
-'Base_Widget_AppCompat_DrawerArrowToggle
-.Base_Widget_AppCompat_DrawerArrowToggle_Common
-*Base_Widget_AppCompat_DropDownItem_Spinner
-Base_Widget_AppCompat_EditText
-!Base_Widget_AppCompat_ImageButton
-%Base_Widget_AppCompat_Light_ActionBar
-+Base_Widget_AppCompat_Light_ActionBar_Solid
-,Base_Widget_AppCompat_Light_ActionBar_TabBar
--Base_Widget_AppCompat_Light_ActionBar_TabText
-5Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse
--Base_Widget_AppCompat_Light_ActionBar_TabView
-%Base_Widget_AppCompat_Light_PopupMenu
-.Base_Widget_AppCompat_Light_PopupMenu_Overflow
-"Base_Widget_AppCompat_ListMenuView
-%Base_Widget_AppCompat_ListPopupWindow
-Base_Widget_AppCompat_ListView
-'Base_Widget_AppCompat_ListView_DropDown
-#Base_Widget_AppCompat_ListView_Menu
-Base_Widget_AppCompat_PopupMenu
-(Base_Widget_AppCompat_PopupMenu_Overflow
-!Base_Widget_AppCompat_PopupWindow
-!Base_Widget_AppCompat_ProgressBar
-,Base_Widget_AppCompat_ProgressBar_Horizontal
-Base_Widget_AppCompat_RatingBar
-)Base_Widget_AppCompat_RatingBar_Indicator
-%Base_Widget_AppCompat_RatingBar_Small
- Base_Widget_AppCompat_SearchView
-*Base_Widget_AppCompat_SearchView_ActionBar
-Base_Widget_AppCompat_SeekBar
-&Base_Widget_AppCompat_SeekBar_Discrete
-Base_Widget_AppCompat_Spinner
-(Base_Widget_AppCompat_Spinner_Underlined
-*Base_Widget_AppCompat_TextView_SpinnerItem
-Base_Widget_AppCompat_Toolbar
-/Base_Widget_AppCompat_Toolbar_Button_Navigation
-Base_Widget_Design_TabLayout
-#Base_Widget_MaterialComponents_Chip
-0Base_Widget_MaterialComponents_TextInputEditText
-.Base_Widget_MaterialComponents_TextInputLayout
-CardView
-CardView_Dark
-CardView_Light
-MaterialTheme
-Platform_AppCompat
-Platform_AppCompat_Light
-Platform_MaterialComponents
-"Platform_MaterialComponents_Dialog
-!Platform_MaterialComponents_Light
-(Platform_MaterialComponents_Light_Dialog
-Platform_ThemeOverlay_AppCompat
-$Platform_ThemeOverlay_AppCompat_Dark
-%Platform_ThemeOverlay_AppCompat_Light
-Platform_V21_AppCompat
-Platform_V21_AppCompat_Light
-Platform_V25_AppCompat
-Platform_V25_AppCompat_Light
-!Platform_Widget_AppCompat_Spinner
-&RtlOverlay_DialogWindowTitle_AppCompat
-/RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
-,RtlOverlay_Widget_AppCompat_DialogTitle_Icon
-)RtlOverlay_Widget_AppCompat_PopupMenuItem
-7RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup
-2RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut
-6RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow
-.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text
-/RtlOverlay_Widget_AppCompat_PopupMenuItem_Title
-.RtlOverlay_Widget_AppCompat_SearchView_MagIcon
-+RtlOverlay_Widget_AppCompat_Search_DropDown
-1RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1
-1RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2
-1RtlOverlay_Widget_AppCompat_Search_DropDown_Query
-0RtlOverlay_Widget_AppCompat_Search_DropDown_Text
-)RtlUnderlay_Widget_AppCompat_ActionButton
-2RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
-TextAppearance_AppCompat
-TextAppearance_AppCompat_Body1
-TextAppearance_AppCompat_Body2
-TextAppearance_AppCompat_Button
- TextAppearance_AppCompat_Caption
-!TextAppearance_AppCompat_Display1
-!TextAppearance_AppCompat_Display2
-!TextAppearance_AppCompat_Display3
-!TextAppearance_AppCompat_Display4
-!TextAppearance_AppCompat_Headline
- TextAppearance_AppCompat_Inverse
-TextAppearance_AppCompat_Large
-&TextAppearance_AppCompat_Large_Inverse
-4TextAppearance_AppCompat_Light_SearchResult_Subtitle
-1TextAppearance_AppCompat_Light_SearchResult_Title
-5TextAppearance_AppCompat_Light_Widget_PopupMenu_Large
-5TextAppearance_AppCompat_Light_Widget_PopupMenu_Small
-TextAppearance_AppCompat_Medium
-'TextAppearance_AppCompat_Medium_Inverse
-TextAppearance_AppCompat_Menu
-.TextAppearance_AppCompat_SearchResult_Subtitle
-+TextAppearance_AppCompat_SearchResult_Title
-TextAppearance_AppCompat_Small
-&TextAppearance_AppCompat_Small_Inverse
- TextAppearance_AppCompat_Subhead
-(TextAppearance_AppCompat_Subhead_Inverse
-TextAppearance_AppCompat_Title
-&TextAppearance_AppCompat_Title_Inverse
- TextAppearance_AppCompat_Tooltip
-.TextAppearance_AppCompat_Widget_ActionBar_Menu
-2TextAppearance_AppCompat_Widget_ActionBar_Subtitle
-:TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse
-/TextAppearance_AppCompat_Widget_ActionBar_Title
-7TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse
-3TextAppearance_AppCompat_Widget_ActionMode_Subtitle
-;TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse
-0TextAppearance_AppCompat_Widget_ActionMode_Title
-8TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse
-&TextAppearance_AppCompat_Widget_Button
-9TextAppearance_AppCompat_Widget_Button_Borderless_Colored
-.TextAppearance_AppCompat_Widget_Button_Colored
-.TextAppearance_AppCompat_Widget_Button_Inverse
-,TextAppearance_AppCompat_Widget_DropDownItem
-0TextAppearance_AppCompat_Widget_PopupMenu_Header
-/TextAppearance_AppCompat_Widget_PopupMenu_Large
-/TextAppearance_AppCompat_Widget_PopupMenu_Small
-&TextAppearance_AppCompat_Widget_Switch
-4TextAppearance_AppCompat_Widget_TextView_SpinnerItem
-"TextAppearance_Compat_Notification
-'TextAppearance_Compat_Notification_Info
-(TextAppearance_Compat_Notification_Line2
-'TextAppearance_Compat_Notification_Time
-(TextAppearance_Compat_Notification_Title
-0TextAppearance_Design_CollapsingToolbar_Expanded
-TextAppearance_Design_Counter
-&TextAppearance_Design_Counter_Overflow
-TextAppearance_Design_Error
- TextAppearance_Design_HelperText
-TextAppearance_Design_Hint
-&TextAppearance_Design_Snackbar_Message
-TextAppearance_Design_Tab
-'TextAppearance_MaterialComponents_Body1
-'TextAppearance_MaterialComponents_Body2
-(TextAppearance_MaterialComponents_Button
-)TextAppearance_MaterialComponents_Caption
-&TextAppearance_MaterialComponents_Chip
-+TextAppearance_MaterialComponents_Headline1
-+TextAppearance_MaterialComponents_Headline2
-+TextAppearance_MaterialComponents_Headline3
-+TextAppearance_MaterialComponents_Headline4
-+TextAppearance_MaterialComponents_Headline5
-+TextAppearance_MaterialComponents_Headline6
-*TextAppearance_MaterialComponents_Overline
-+TextAppearance_MaterialComponents_Subtitle1
-+TextAppearance_MaterialComponents_Subtitle2
-%TextAppearance_MaterialComponents_Tab
-1TextAppearance_Widget_AppCompat_ExpandedMenu_Item
-0TextAppearance_Widget_AppCompat_Toolbar_Subtitle
--TextAppearance_Widget_AppCompat_Toolbar_Title
-ThemeOverlay_AppCompat
- ThemeOverlay_AppCompat_ActionBar
-ThemeOverlay_AppCompat_Dark
-%ThemeOverlay_AppCompat_Dark_ActionBar
-ThemeOverlay_AppCompat_Dialog
-#ThemeOverlay_AppCompat_Dialog_Alert
-ThemeOverlay_AppCompat_Light
-ThemeOverlay_MaterialComponents
-)ThemeOverlay_MaterialComponents_ActionBar
-$ThemeOverlay_MaterialComponents_Dark
-.ThemeOverlay_MaterialComponents_Dark_ActionBar
-&ThemeOverlay_MaterialComponents_Dialog
-,ThemeOverlay_MaterialComponents_Dialog_Alert
-%ThemeOverlay_MaterialComponents_Light
-1ThemeOverlay_MaterialComponents_TextInputEditText
-;ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
-AThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
-=ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
-CThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
-Theme_AppCompat
-Theme_AppCompat_CompactMenu
-Theme_AppCompat_DayNight
-&Theme_AppCompat_DayNight_DarkActionBar
-Theme_AppCompat_DayNight_Dialog
-(Theme_AppCompat_DayNight_DialogWhenLarge
-%Theme_AppCompat_DayNight_Dialog_Alert
-(Theme_AppCompat_DayNight_Dialog_MinWidth
-$Theme_AppCompat_DayNight_NoActionBar
-Theme_AppCompat_Dialog
-Theme_AppCompat_DialogWhenLarge
-Theme_AppCompat_Dialog_Alert
-Theme_AppCompat_Dialog_MinWidth
-Theme_AppCompat_Light
-#Theme_AppCompat_Light_DarkActionBar
-Theme_AppCompat_Light_Dialog
-%Theme_AppCompat_Light_DialogWhenLarge
-"Theme_AppCompat_Light_Dialog_Alert
-%Theme_AppCompat_Light_Dialog_MinWidth
-!Theme_AppCompat_Light_NoActionBar
-Theme_AppCompat_NoActionBar
-Theme_Design
-Theme_Design_BottomSheetDialog
-Theme_Design_Light
-$Theme_Design_Light_BottomSheetDialog
-Theme_Design_Light_NoActionBar
-Theme_Design_NoActionBar
-Theme_MaterialComponents
-*Theme_MaterialComponents_BottomSheetDialog
-Theme_MaterialComponents_Bridge
-$Theme_MaterialComponents_CompactMenu
-Theme_MaterialComponents_Dialog
-(Theme_MaterialComponents_DialogWhenLarge
-%Theme_MaterialComponents_Dialog_Alert
-(Theme_MaterialComponents_Dialog_MinWidth
-Theme_MaterialComponents_Light
-0Theme_MaterialComponents_Light_BottomSheetDialog
-%Theme_MaterialComponents_Light_Bridge
-,Theme_MaterialComponents_Light_DarkActionBar
-3Theme_MaterialComponents_Light_DarkActionBar_Bridge
-%Theme_MaterialComponents_Light_Dialog
-.Theme_MaterialComponents_Light_DialogWhenLarge
-+Theme_MaterialComponents_Light_Dialog_Alert
-.Theme_MaterialComponents_Light_Dialog_MinWidth
-*Theme_MaterialComponents_Light_NoActionBar
-1Theme_MaterialComponents_Light_NoActionBar_Bridge
-$Theme_MaterialComponents_NoActionBar
-+Theme_MaterialComponents_NoActionBar_Bridge
-Widget_AppCompat_ActionBar
- Widget_AppCompat_ActionBar_Solid
-!Widget_AppCompat_ActionBar_TabBar
-"Widget_AppCompat_ActionBar_TabText
-"Widget_AppCompat_ActionBar_TabView
-Widget_AppCompat_ActionButton
-'Widget_AppCompat_ActionButton_CloseMode
-&Widget_AppCompat_ActionButton_Overflow
-Widget_AppCompat_ActionMode
-$Widget_AppCompat_ActivityChooserView
-%Widget_AppCompat_AutoCompleteTextView
-Widget_AppCompat_Button
-Widget_AppCompat_ButtonBar
-&Widget_AppCompat_ButtonBar_AlertDialog
-"Widget_AppCompat_Button_Borderless
-*Widget_AppCompat_Button_Borderless_Colored
--Widget_AppCompat_Button_ButtonBar_AlertDialog
-Widget_AppCompat_Button_Colored
-Widget_AppCompat_Button_Small
-(Widget_AppCompat_CompoundButton_CheckBox
-+Widget_AppCompat_CompoundButton_RadioButton
-&Widget_AppCompat_CompoundButton_Switch
-"Widget_AppCompat_DrawerArrowToggle
-%Widget_AppCompat_DropDownItem_Spinner
-Widget_AppCompat_EditText
-Widget_AppCompat_ImageButton
- Widget_AppCompat_Light_ActionBar
-&Widget_AppCompat_Light_ActionBar_Solid
-.Widget_AppCompat_Light_ActionBar_Solid_Inverse
-'Widget_AppCompat_Light_ActionBar_TabBar
-/Widget_AppCompat_Light_ActionBar_TabBar_Inverse
-(Widget_AppCompat_Light_ActionBar_TabText
-0Widget_AppCompat_Light_ActionBar_TabText_Inverse
-(Widget_AppCompat_Light_ActionBar_TabView
-0Widget_AppCompat_Light_ActionBar_TabView_Inverse
-#Widget_AppCompat_Light_ActionButton
--Widget_AppCompat_Light_ActionButton_CloseMode
-,Widget_AppCompat_Light_ActionButton_Overflow
-)Widget_AppCompat_Light_ActionMode_Inverse
-*Widget_AppCompat_Light_ActivityChooserView
-+Widget_AppCompat_Light_AutoCompleteTextView
-+Widget_AppCompat_Light_DropDownItem_Spinner
-&Widget_AppCompat_Light_ListPopupWindow
-(Widget_AppCompat_Light_ListView_DropDown
- Widget_AppCompat_Light_PopupMenu
-)Widget_AppCompat_Light_PopupMenu_Overflow
-!Widget_AppCompat_Light_SearchView
-1Widget_AppCompat_Light_Spinner_DropDown_ActionBar
-Widget_AppCompat_ListMenuView
- Widget_AppCompat_ListPopupWindow
-Widget_AppCompat_ListView
-"Widget_AppCompat_ListView_DropDown
-Widget_AppCompat_ListView_Menu
-Widget_AppCompat_PopupMenu
-#Widget_AppCompat_PopupMenu_Overflow
-Widget_AppCompat_PopupWindow
-Widget_AppCompat_ProgressBar
-'Widget_AppCompat_ProgressBar_Horizontal
-Widget_AppCompat_RatingBar
-$Widget_AppCompat_RatingBar_Indicator
- Widget_AppCompat_RatingBar_Small
-Widget_AppCompat_SearchView
-%Widget_AppCompat_SearchView_ActionBar
-Widget_AppCompat_SeekBar
-!Widget_AppCompat_SeekBar_Discrete
-Widget_AppCompat_Spinner
-!Widget_AppCompat_Spinner_DropDown
-+Widget_AppCompat_Spinner_DropDown_ActionBar
-#Widget_AppCompat_Spinner_Underlined
-%Widget_AppCompat_TextView_SpinnerItem
-Widget_AppCompat_Toolbar
-*Widget_AppCompat_Toolbar_Button_Navigation
-)Widget_Compat_NotificationActionContainer
-$Widget_Compat_NotificationActionText
-Widget_Design_AppBarLayout
-"Widget_Design_BottomNavigationView
-Widget_Design_BottomSheet_Modal
-Widget_Design_CollapsingToolbar
-"Widget_Design_FloatingActionButton
-Widget_Design_NavigationView
-$Widget_Design_ScrimInsetsFrameLayout
-Widget_Design_Snackbar
-Widget_Design_TabLayout
-Widget_Design_TextInputLayout
-&Widget_MaterialComponents_BottomAppBar
-.Widget_MaterialComponents_BottomAppBar_Colored
-.Widget_MaterialComponents_BottomNavigationView
-6Widget_MaterialComponents_BottomNavigationView_Colored
-+Widget_MaterialComponents_BottomSheet_Modal
- Widget_MaterialComponents_Button
-%Widget_MaterialComponents_Button_Icon
-/Widget_MaterialComponents_Button_OutlinedButton
-4Widget_MaterialComponents_Button_OutlinedButton_Icon
-+Widget_MaterialComponents_Button_TextButton
-2Widget_MaterialComponents_Button_TextButton_Dialog
-7Widget_MaterialComponents_Button_TextButton_Dialog_Icon
-0Widget_MaterialComponents_Button_TextButton_Icon
-1Widget_MaterialComponents_Button_UnelevatedButton
-6Widget_MaterialComponents_Button_UnelevatedButton_Icon
-"Widget_MaterialComponents_CardView
-#Widget_MaterialComponents_ChipGroup
-%Widget_MaterialComponents_Chip_Action
-%Widget_MaterialComponents_Chip_Choice
-$Widget_MaterialComponents_Chip_Entry
-%Widget_MaterialComponents_Chip_Filter
-.Widget_MaterialComponents_FloatingActionButton
-(Widget_MaterialComponents_NavigationView
-"Widget_MaterialComponents_Snackbar
-,Widget_MaterialComponents_Snackbar_FullWidth
-#Widget_MaterialComponents_TabLayout
-+Widget_MaterialComponents_TabLayout_Colored
-5Widget_MaterialComponents_TextInputEditText_FilledBox
-;Widget_MaterialComponents_TextInputEditText_FilledBox_Dense
-7Widget_MaterialComponents_TextInputEditText_OutlinedBox
-=Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense
-3Widget_MaterialComponents_TextInputLayout_FilledBox
-9Widget_MaterialComponents_TextInputLayout_FilledBox_Dense
-5Widget_MaterialComponents_TextInputLayout_OutlinedBox
-;Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
-!Widget_MaterialComponents_Toolbar
- Widget_Support_CoordinatorLayout
-switch_style   @
+alButtonStyle
+-MaterialComponentsTheme_materialCardViewStyle
++MaterialComponentsTheme_navigationViewStyle
+'MaterialComponentsTheme_scrimBackground
++MaterialComponentsTheme_snackbarButtonStyle
+ MaterialComponentsTheme_tabStyle
++MaterialComponentsTheme_textAppearanceBody1
++MaterialComponentsTheme_textAppearanceBody2
+,MaterialComponentsTheme_textAppearanceButton
+-MaterialComponentsTheme_textAppearanceCaption
+/MaterialComponentsTheme_textAppearanceHeadline1
+/MaterialComponentsTheme_textAppearanceHeadline2
+/MaterialComponentsTheme_textAppearanceHeadline3
+/MaterialComponentsTheme_textAppearanceHeadline4
+/MaterialComponentsTheme_textAppearanceHeadline5
+/MaterialComponentsTheme_textAppearanceHeadline6
+.MaterialComponentsTheme_textAppearanceOverline
+/MaterialComponentsTheme_textAppearanceSubtitle1
+/MaterialComponentsTheme_textAppearanceSubtitle2
+&MaterialComponentsTheme_textInputStyle
+	MenuGroup
+#MenuGroup_android_checkableBehavior
+MenuGroup_android_enabled
+MenuGroup_android_id
+MenuGroup_android_menuCategory
+!MenuGroup_android_orderInCategory
+MenuGroup_android_visible
+MenuItem
+MenuItem_actionLayout
+MenuItem_actionProviderClass
+MenuItem_actionViewClass
+MenuItem_alphabeticModifiers
+#MenuItem_android_alphabeticShortcut
+MenuItem_android_checkable
+MenuItem_android_checked
+MenuItem_android_enabled
+MenuItem_android_icon
+MenuItem_android_id
+MenuItem_android_menuCategory
+ MenuItem_android_numericShortcut
+MenuItem_android_onClick
+ MenuItem_android_orderInCategory
+MenuItem_android_title
+MenuItem_android_titleCondensed
+MenuItem_android_visible
+MenuItem_contentDescription
+MenuItem_iconTint
+MenuItem_iconTintMode
+MenuItem_numericModifiers
+MenuItem_showAsAction
+MenuItem_tooltipText
+MenuView
+!MenuView_android_headerBackground
+"MenuView_android_horizontalDivider
+MenuView_android_itemBackground
+&MenuView_android_itemIconDisabledAlpha
+#MenuView_android_itemTextAppearance
+ MenuView_android_verticalDivider
+%MenuView_android_windowAnimationStyle
+MenuView_preserveIconSpacing
+MenuView_subMenuArrow
+NavigationView
+!NavigationView_android_background
+(NavigationView_android_fitsSystemWindows
+NavigationView_android_maxWidth
+NavigationView_elevation
+NavigationView_headerLayout
+NavigationView_itemBackground
+$NavigationView_itemHorizontalPadding
+NavigationView_itemIconPadding
+NavigationView_itemIconTint
+!NavigationView_itemTextAppearance
+NavigationView_itemTextColor
+NavigationView_menu
+PopupWindow
+PopupWindowBackgroundState
+-PopupWindowBackgroundState_state_above_anchor
+'PopupWindow_android_popupAnimationStyle
+#PopupWindow_android_popupBackground
+PopupWindow_overlapAnchor
+RecycleListView
+&RecycleListView_paddingBottomNoButtons
+!RecycleListView_paddingTopNoTitle
+RecyclerView
++RecyclerView_android_descendantFocusability
+ RecyclerView_android_orientation
+RecyclerView_fastScrollEnabled
+.RecyclerView_fastScrollHorizontalThumbDrawable
+.RecyclerView_fastScrollHorizontalTrackDrawable
+,RecyclerView_fastScrollVerticalThumbDrawable
+,RecyclerView_fastScrollVerticalTrackDrawable
+RecyclerView_layoutManager
+RecyclerView_reverseLayout
+RecyclerView_spanCount
+RecyclerView_stackFromEnd
+ScrimInsetsFrameLayout
+&ScrimInsetsFrameLayout_insetForeground
+ScrollingViewBehavior_Layout
+0ScrollingViewBehavior_Layout_behavior_overlapTop
+
+SearchView
+SearchView_android_focusable
+SearchView_android_imeOptions
+SearchView_android_inputType
+SearchView_android_maxWidth
+SearchView_closeIcon
+SearchView_commitIcon
+SearchView_defaultQueryHint
+SearchView_goIcon
+SearchView_iconifiedByDefault
+SearchView_layout
+SearchView_queryBackground
+SearchView_queryHint
+SearchView_searchHintIcon
+SearchView_searchIcon
+SearchView_submitBackground
+SearchView_suggestionRowLayout
+SearchView_voiceIcon
+Snackbar
+SnackbarLayout
+SnackbarLayout_android_maxWidth
+SnackbarLayout_elevation
+#SnackbarLayout_maxActionInlineWidth
+Snackbar_snackbarButtonStyle
+Snackbar_snackbarStyle
+Spinner
+Spinner_android_dropDownWidth
+Spinner_android_entries
+Spinner_android_popupBackground
+Spinner_android_prompt
+Spinner_popupTheme
+StateListDrawable
+StateListDrawableItem
+&StateListDrawableItem_android_drawable
+&StateListDrawable_android_constantSize
+ StateListDrawable_android_dither
++StateListDrawable_android_enterFadeDuration
+*StateListDrawable_android_exitFadeDuration
+)StateListDrawable_android_variablePadding
+!StateListDrawable_android_visible
+SwitchCompat
+SwitchCompat_android_textOff
+SwitchCompat_android_textOn
+SwitchCompat_android_thumb
+SwitchCompat_showText
+SwitchCompat_splitTrack
+SwitchCompat_switchMinWidth
+SwitchCompat_switchPadding
+!SwitchCompat_switchTextAppearance
+SwitchCompat_thumbTextPadding
+SwitchCompat_thumbTint
+SwitchCompat_thumbTintMode
+SwitchCompat_track
+SwitchCompat_trackTint
+SwitchCompat_trackTintMode
+TabItem
+TabItem_android_icon
+TabItem_android_layout
+TabItem_android_text
+	TabLayout
+TabLayout_tabBackground
+TabLayout_tabContentStart
+TabLayout_tabGravity
+TabLayout_tabIconTint
+TabLayout_tabIconTintMode
+TabLayout_tabIndicator
+'TabLayout_tabIndicatorAnimationDuration
+TabLayout_tabIndicatorColor
+TabLayout_tabIndicatorFullWidth
+TabLayout_tabIndicatorGravity
+TabLayout_tabIndicatorHeight
+TabLayout_tabInlineLabel
+TabLayout_tabMaxWidth
+TabLayout_tabMinWidth
+TabLayout_tabMode
+TabLayout_tabPadding
+TabLayout_tabPaddingBottom
+TabLayout_tabPaddingEnd
+TabLayout_tabPaddingStart
+TabLayout_tabPaddingTop
+TabLayout_tabRippleColor
+TabLayout_tabSelectedTextColor
+TabLayout_tabTextAppearance
+TabLayout_tabTextColor
+TabLayout_tabUnboundedRipple
+TextAppearance
+!TextAppearance_android_fontFamily
+"TextAppearance_android_shadowColor
+TextAppearance_android_shadowDx
+TextAppearance_android_shadowDy
+#TextAppearance_android_shadowRadius
+ TextAppearance_android_textColor
+$TextAppearance_android_textColorHint
+$TextAppearance_android_textColorLink
+TextAppearance_android_textSize
+ TextAppearance_android_textStyle
+TextAppearance_android_typeface
+TextAppearance_fontFamily
+TextAppearance_textAllCaps
+TextInputLayout
+TextInputLayout_android_hint
+%TextInputLayout_android_textColorHint
+"TextInputLayout_boxBackgroundColor
+!TextInputLayout_boxBackgroundMode
+&TextInputLayout_boxCollapsedPaddingTop
+(TextInputLayout_boxCornerRadiusBottomEnd
+*TextInputLayout_boxCornerRadiusBottomStart
+%TextInputLayout_boxCornerRadiusTopEnd
+'TextInputLayout_boxCornerRadiusTopStart
+TextInputLayout_boxStrokeColor
+TextInputLayout_boxStrokeWidth
+TextInputLayout_counterEnabled
+ TextInputLayout_counterMaxLength
+-TextInputLayout_counterOverflowTextAppearance
+%TextInputLayout_counterTextAppearance
+TextInputLayout_errorEnabled
+#TextInputLayout_errorTextAppearance
+TextInputLayout_helperText
+!TextInputLayout_helperTextEnabled
+(TextInputLayout_helperTextTextAppearance
+$TextInputLayout_hintAnimationEnabled
+TextInputLayout_hintEnabled
+"TextInputLayout_hintTextAppearance
+0TextInputLayout_passwordToggleContentDescription
+&TextInputLayout_passwordToggleDrawable
+%TextInputLayout_passwordToggleEnabled
+"TextInputLayout_passwordToggleTint
+&TextInputLayout_passwordToggleTintMode
+ThemeEnforcement
+'ThemeEnforcement_android_textAppearance
+%ThemeEnforcement_enforceMaterialTheme
+&ThemeEnforcement_enforceTextAppearance
+Toolbar
+Toolbar_android_gravity
+Toolbar_android_minHeight
+Toolbar_buttonGravity
+"Toolbar_collapseContentDescription
+Toolbar_collapseIcon
+Toolbar_contentInsetEnd
+"Toolbar_contentInsetEndWithActions
+Toolbar_contentInsetLeft
+Toolbar_contentInsetRight
+Toolbar_contentInsetStart
+'Toolbar_contentInsetStartWithNavigation
+Toolbar_logo
+Toolbar_logoDescription
+Toolbar_maxButtonHeight
+$Toolbar_navigationContentDescription
+Toolbar_navigationIcon
+Toolbar_popupTheme
+Toolbar_subtitle
+Toolbar_subtitleTextAppearance
+Toolbar_subtitleTextColor
+Toolbar_title
+Toolbar_titleMargin
+Toolbar_titleMarginBottom
+Toolbar_titleMarginEnd
+Toolbar_titleMarginStart
+Toolbar_titleMarginTop
+Toolbar_titleMargins
+Toolbar_titleTextAppearance
+Toolbar_titleTextColor
+View
+ViewBackgroundHelper
+'ViewBackgroundHelper_android_background
+#ViewBackgroundHelper_backgroundTint
+'ViewBackgroundHelper_backgroundTintMode
+ViewStubCompat
+ViewStubCompat_android_id
+!ViewStubCompat_android_inflatedId
+ViewStubCompat_android_layout
+View_android_focusable
+View_android_theme
+View_paddingEnd
+View_paddingStart
+
+View_theme   N
  
  
 
 
 
- 
+
  
-
- 
-
- ý~   20B R	0	X†Pº	€€ÀðÀ>R0	X†Pº	‚€ÀðÀ>R0	X†Pº	„€ÀðÀ>R0	X†Pº	†€ÀðÀ>R0	X†Pº	ˆ€ÀðÀ>R0	X†Pº	Š€ÀðÀ>R0	X†Pº	Œ€ÀðÀ>R0	X†Pº	Ž€ÀðÀ>R0	X†Pº	€ÀðÀ>R0	X†Pº	’€ÀðÀ>R0	X†Pº	”€ÀðÀ>R0	X†Pº	–€ÀðÀ>R0	X†Pº	˜€ÀðÀ>R0	X†Pº	š€ÀðÀ>R0	X†Pº	œ€ÀðÀ>R0	X†Pº	ž€ÀðÀ>R0	X†Pº	 €ÀðÀ>R0	X†Pº	¢€ÀðÀ>R0	X†Pº	¤€ÀðÀ>R0	X†Pº	¦€ÀðÀ>R0	X†Pº	¨€ÀðÀ>R0	X†Pº	ª€ÀðÀ>R 0	X†Pº	¬€ÀðÀ>R!0	X†Pº	®€ÀðÀ>R"0	X†Pº	°€ÀðÀ>R#0	X†Pº	²€ÀðÀ>R$0	X†Pº	´€ÀðÀ>R%0	X†Pº	¶€ÀðÀ>R&0	X†Pº	¸€ÀðÀ>R'0	X†Pº	º€ÀðÀ>R(0	X†Pº	¼€ÀðÀ>R)0	X†Pº	¾€ÀðÀ>R*0	X†Pº	À€ÀðÀ>R+0	X†Pº	Â€ÀðÀ>R,0	X†Pº	Ä€ÀðÀ>R-0	X†Pº	Æ€ÀðÀ>R.0	X†Pº	È€ÀðÀ>R/0	X†Pº	Ê€ÀðÀ>R00	X†Pº	Ì€ÀðÀ>R10	X†Pº	Î€ÀðÀ>R20	X†Pº	Ð€ÀðÀ>R30	X†Pº	Ò€ÀðÀ>R40	X†Pº	Ô€ÀðÀ>R50	X†Pº	Ö€ÀðÀ>R60	X†Pº	Ø€ÀðÀ>R70	X†Pº	Ú€ÀðÀ>R80	X†Pº	Ü€ÀðÀ>R90	X†Pº	Þ€ÀðÀ>R:0	X†Pº	à€ÀðÀ>R;0	X†Pº	â€ÀðÀ>R<0	X†Pº	ä€ÀðÀ>R=0	X†Pº	æ€ÀðÀ>R>0	X†Pº	è€ÀðÀ>R?0	X†Pº	ê€ÀðÀ>R@0	X†Pº	ì€ÀðÀ>RA0	X†Pº	î€ÀðÀ>RB0	X†Pº	ð€ÀðÀ>RC0	X†Pº	ò€ÀðÀ>RD0	X†Pº	ô€ÀðÀ>RE0	X†Pº	ö€ÀðÀ>RF0	X†Pº	ø€ÀðÀ>RG0	X†Pº	ú€ÀðÀ>RH0	X†Pº	ü€ÀðÀ>RI0	X†Pº	þ€ÀðÀ>RJ0	X†Pº	€ÀðÀ>RK0	X†Pº	‚ÀðÀ>RL0	X†Pº	„ÀðÀ>RM0	X†Pº	†ÀðÀ>RN0	X†Pº	ˆÀðÀ>RO0	X†Pº	ŠÀðÀ>RP0	X†Pº	ŒÀðÀ>RQ0	X†Pº	ŽÀðÀ>RR0	X†Pº	ÀðÀ>RS0	X†Pº	’ÀðÀ>RT0	X†Pº	”ÀðÀ>RU0	X†Pº	–ÀðÀ>RV0	X†Pº	˜ÀðÀ>RW0	X†Pº	šÀðÀ>RX0	X†Pº	œÀðÀ>RY0	X†Pº	žÀðÀ>RZ0	X†Pº	 ÀðÀ>R[0	X†Pº	¢ÀðÀ>R\0	X†Pº	¤ÀðÀ>R]0	X†Pº	¦ÀðÀ>R^0	X†Pº	¨ÀðÀ>R_0	X†Pº	ªÀðÀ>R`0	X†Pº	¬ÀðÀ>Ra0	X†Pº	®ÀðÀ>Rb0	X†Pº	°ÀðÀ>Rc0	X†Pº	²ÀðÀ>Rd0	X†Pº	´ÀðÀ>Re0	X†Pº	¶ÀðÀ>Rf0	X†Pº	¸ÀðÀ>Rg0	X†Pº	ºÀðÀ>Rh0	X†Pº	¼ÀðÀ>Ri0	X†Pº	¾ÀðÀ>Rj0	X†Pº	ÀÀðÀ>Rk0	X†Pº	ÂÀðÀ>Rl0	X†Pº	ÄÀðÀ>Rm0	X†Pº	ÆÀðÀ>Rn0	X†Pº	ÈÀðÀ>Ro0	X†Pº	ÊÀðÀ>Rp0	X†Pº	ÌÀðÀ>Rq0	X†Pº	ÎÀðÀ>Rr0	X†Pº	ÐÀðÀ>Rs0	X†Pº	ÒÀðÀ>Rt0	X†Pº	ÔÀðÀ>Ru0	X†Pº	ÖÀðÀ>Rv0	X†Pº	ØÀðÀ>Rw0	X†Pº	ÚÀðÀ>Rx0	X†Pº	ÜÀðÀ>Ry0	X†Pº	ÞÀðÀ>Rz0	X†Pº	àÀðÀ>R{0	X†Pº	âÀðÀ>R|0	X†Pº	äÀðÀ>R}0	X†Pº	æÀðÀ>R~0	X†Pº	èÀðÀ>R0	X†Pº	êÀðÀ>R€0	X†Pº	ìÀðÀ>R0	X†Pº	îÀðÀ>R‚0	X†Pº	ðÀðÀ>Rƒ0	X†Pº	òÀðÀ>R„0	X†Pº	ôÀðÀ>R…0	X†Pº	öÀðÀ>R†0	X†Pº	øÀðÀ>R‡0	X†Pº	úÀðÀ>Rˆ0	X†Pº	üÀðÀ>R‰0	X†Pº	þÀðÀ>RŠ0	X†Pº	€‚ÀðÀ>R‹0	X†Pº	‚‚ÀðÀ>RŒ0	X†Pº	„‚ÀðÀ>R0	X†Pº	†‚ÀðÀ>RŽ0	X†Pº	ˆ‚ÀðÀ>R0	X†Pº	Š‚ÀðÀ>R0	X†Pº	Œ‚ÀðÀ>R‘0	X†Pº	Ž‚ÀðÀ>R’0	X†Pº	‚ÀðÀ>R“0	X†Pº	’‚ÀðÀ>R”0	X†Pº	”‚ÀðÀ>R•0	X†Pº	–‚ÀðÀ>R–0	X†Pº	˜‚ÀðÀ>R—0	X†Pº	š‚ÀðÀ>R˜0	X†Pº	œ‚ÀðÀ>R™0	X†Pº	ž‚ÀðÀ>Rš0	X†Pº	 ‚ÀðÀ>R›0	X†Pº	¢‚ÀðÀ>Rœ0	X†Pº	¤‚ÀðÀ>R0	X†Pº	¦‚ÀðÀ>Rž0	X†Pº	¨‚ÀðÀ>RŸ0	X†Pº	ª‚ÀðÀ>R 0	X†Pº	¬‚ÀðÀ>R¡0	X†Pº	®‚ÀðÀ>R¢0	X†Pº	°‚ÀðÀ>R£0	X†Pº	²‚ÀðÀ>R¤0	X†Pº	´‚ÀðÀ>R¥0	X†Pº	¶‚ÀðÀ>R¦0	X†Pº	¸‚ÀðÀ>R§0	X†Pº	º‚ÀðÀ>R¨0	X†Pº	¼‚ÀðÀ>R©0	X†Pº	¾‚ÀðÀ>Rª0	X†Pº	À‚ÀðÀ>R«0	X†Pº	Â‚ÀðÀ>R¬0	X†Pº	Ä‚ÀðÀ>R­0	X†Pº	Æ‚ÀðÀ>R®0	X†Pº	È‚ÀðÀ>R¯0	X†Pº	Ê‚ÀðÀ>R°0	X†Pº	Ì‚ÀðÀ>R±0	X†Pº	Î‚ÀðÀ>R²0	X†Pº	Ð‚ÀðÀ>R³0	X†Pº	Ò‚ÀðÀ>R´0	X†Pº	Ô‚ÀðÀ>Rµ0	X†Pº	Ö‚ÀðÀ>R¶0	X†Pº	Ø‚ÀðÀ>R·0	X†Pº	Ú‚ÀðÀ>R¸0	X†Pº	Ü‚ÀðÀ>R¹0	X†Pº	Þ‚ÀðÀ>Rº0	X†Pº	à‚ÀðÀ>R»0	X†Pº	â‚ÀðÀ>R¼0	X†Pº	ä‚ÀðÀ>R½0	X†Pº	æ‚ÀðÀ>R¾0	X†Pº	è‚ÀðÀ>R¿0	X†Pº	ê‚ÀðÀ>RÀ0	X†Pº	ì‚ÀðÀ>RÁ0	X†Pº	î‚ÀðÀ>RÂ0	X†Pº	ð‚ÀðÀ>RÃ0	X†Pº	ò‚ÀðÀ>RÄ0	X†Pº	ô‚ÀðÀ>RÅ0	X†Pº	ö‚ÀðÀ>RÆ0	X†Pº	ø‚ÀðÀ>RÇ0	X†Pº	ú‚ÀðÀ>RÈ0	X†Pº	ü‚ÀðÀ>RÉ0	X†Pº	þ‚ÀðÀ>RÊ0	X†Pº	€ƒÀðÀ>RË0	X†Pº	‚ƒÀðÀ>RÌ0	X†Pº	„ƒÀðÀ>RÍ0	X†Pº	†ƒÀðÀ>RÎ0	X†Pº	ˆƒÀðÀ>RÏ0	X†Pº	ŠƒÀðÀ>RÐ0	X†Pº	ŒƒÀðÀ>RÑ0	X†Pº	ŽƒÀðÀ>RÒ0	X†Pº	ƒÀðÀ>RÓ0	X†Pº	’ƒÀðÀ>  [
+ 
+
+	 
+ 
+ Ð
+    Ò20BR0X†Pº	¬„øðÀ>R	0X†Pº	®„øðÀ>R
+0X†Pº	°„øðÀ>R0X†Pº	²„øðÀ>R0X†Pº	´„øðÀ>R0X†Pº	€‡øðÀ>R0X†Pº	‚‡øðÀ>R0X†Pº	à‡øðÀ>  ~
+android
+support
+coordinatorlayout
+R
+style
+kotlin
+Any
+"TextAppearance_Compat_Notification
+Int
+'TextAppearance_Compat_Notification_Info
+(TextAppearance_Compat_Notification_Line2
+'TextAppearance_Compat_Notification_Time
+(TextAppearance_Compat_Notification_Title
+)Widget_Compat_NotificationActionContainer
+$Widget_Compat_NotificationActionText
+ Widget_Support_CoordinatorLayout   4
+ 
+ 
+
+ 
+ 
+
+ 
+ Ï   620BR0X†Pº	Ü¸ðÀ>R
+0X†Pº	Þ¸ðÀ>R0X†Pº	à¸ðÀ>R0X†Pº	â¸ðÀ>R0X†Pº	ä¸ðÀ>R0X†Pº	æ¸ðÀ>R0X†Pº	è¸ðÀ>R0X†Pº	ê¸ðÀ>R0X†Pº	ì¸ðÀ>R0X†Pº	î¸ðÀ>R0X†Pº	ð¸ðÀ>R0X†Pº	ò¸ðÀ>  “
+android
+support
+v7
+recyclerview
+R
+drawable
+kotlin
+Any
+notification_action_background
+Int
+notification_bg
+notification_bg_low
+notification_bg_low_normal
+notification_bg_low_pressed
+notification_bg_normal
+notification_bg_normal_pressed
+notification_icon_background
+notification_template_icon_bg
+!notification_template_icon_low_bg
+notification_tile_bg
+!notify_panel_notification_icon_bg   :
+ 
+ 
+
+
+ 
+ 
+
+ 
+	 Ê   620BR0X†Pº	Ü¸ðÀ>R	0X†Pº	Þ¸ðÀ>R
+0X†Pº	à¸ðÀ>R0X†Pº	â¸ðÀ>R0X†Pº	ä¸ðÀ>R0X†Pº	æ¸ðÀ>R0X†Pº	è¸ðÀ>R0X†Pº	ê¸ðÀ>R0X†Pº	ì¸ðÀ>R0X†Pº	î¸ðÀ>R0X†Pº	ð¸ðÀ>R0X†Pº	ò¸ðÀ>  ”
+android
+support
+slidingpanelayout
+R
+drawable
+kotlin
+Any
+notification_action_background
+Int
+notification_bg
+notification_bg_low
+notification_bg_low_normal
+notification_bg_low_pressed
+notification_bg_normal
+notification_bg_normal_pressed
+notification_icon_background
+notification_template_icon_bg
+!notification_template_icon_low_bg
+notification_tile_bg
+!notify_panel_notification_icon_bg   4
+ 
+ 
+
+ 
+ 
+
+ 
+ Ó0   P20	BR
+0
+X†Pº	€€ØðÀ>R0
+X†Pº	‚€ØðÀ>R0
+X†Pº	„€ØðÀ>R0
+X†Pº	†€ØðÀ>R0
+X†Pº	ˆ€ØðÀ>R0
+X†Pº	Š€ØðÀ>R0
+X†Pº	Œ€ØðÀ>R0
+X†Pº	Ž€ØðÀ>R0
+X†Pº	€ØðÀ>R0
+X†Pº	’€ØðÀ>R0
+X†Pº	”€ØðÀ>R0
+X†Pº	–€ØðÀ>R0
+X†Pº	˜€ØðÀ>R0
+X†Pº	š€ØðÀ>R0
+X†Pº	œ€ØðÀ>R0
+X†Pº	ž€ØðÀ>R0
+X†Pº	 €ØðÀ>R0
+X†Pº	¢€ØðÀ>R0
+X†Pº	¤€ØðÀ>R0
+X†Pº	¦€ØðÀ>R0
+X†Pº	¨€ØðÀ>R 0
+X†Pº	ª€ØðÀ>R!0
+X†Pº	¬€ØðÀ>R"0
+X†Pº	®€ØðÀ>R#0
+X†Pº	°€ØðÀ>R$0
+X†Pº	²€ØðÀ>R%0
+X†Pº	´€ØðÀ>R&0
+X†Pº	¶€ØðÀ>R'0
+X†Pº	¾€ØðÀ>R(0
+X†Pº	À€ØðÀ>R)0
+X†Pº	Â€ØðÀ>R*0
+X†Pº	Ä€ØðÀ>R+0
+X†Pº	Æ€ØðÀ>R,0
+X†Pº	È€ØðÀ>R-0
+X†Pº	Ê€ØðÀ>R.0
+X†Pº	Ì€ØðÀ>R/0
+X†Pº	Î€ØðÀ>R00
+X†Pº	Ð€ØðÀ>R10
+X†Pº	Ò€ØðÀ>R20
+X†Pº	Ô€ØðÀ>R30
+X†Pº	Ö€ØðÀ>R40
+X†Pº	Ø€ØðÀ>R50
+X†Pº	Ú€ØðÀ>R60
+X†Pº	Ü€ØðÀ>R70
+X†Pº	Þ€ØðÀ>R80
+X†Pº	à€ØðÀ>R90
+X†Pº	â€ØðÀ>R:0
+X†Pº	ä€ØðÀ>R;0
+X†Pº	æ€ØðÀ>R<0
+X†Pº	è€ØðÀ>R=0
+X†Pº	ê€ØðÀ>R>0
+X†Pº	ì€ØðÀ>R?0
+X†Pº	î€ØðÀ>R@0
+X†Pº	ð€ØðÀ>  q
 org
 
 tensorflow
 lite
 examples
 posenet
+lib
 R
-id
+layout
 kotlin
 Any
-ALT
+abc_action_bar_title_item
 Int
-CTRL
-FUNCTION
-META
-SHIFT
-SYM
-
-action_bar
-action_bar_activity_content
-action_bar_container
-action_bar_root
-action_bar_spinner
-action_bar_subtitle
-action_bar_title
-action_container
-action_context_bar
-action_divider
-action_image
-action_menu_divider
-action_menu_presenter
-action_mode_bar
-action_mode_bar_stub
-action_mode_close_button
-action_text
-actions
-activity_chooser_view_content
-add
-
-alertTitle
-all
-always
-async
-auto
-barrier
-	beginning
-blocking
-bottom
-buttonPanel
-center
-center_horizontal
-center_vertical
-chains
-checkbox
-chronometer
-clip_horizontal
-clip_vertical
-collapseActionView
-	container
-content
-contentPanel
-coordinator
-custom
-customPanel
-decor_content_parent
-default_activity_button
-design_bottom_sheet
+abc_action_bar_up_container
+abc_action_menu_item_layout
+abc_action_menu_layout
+abc_action_mode_bar
+#abc_action_mode_close_item_material
+abc_activity_chooser_view
+#abc_activity_chooser_view_list_item
+$abc_alert_dialog_button_bar_material
+abc_alert_dialog_material
+abc_alert_dialog_title_material
+abc_cascading_menu_item_layout
+abc_dialog_title_material
+abc_expanded_menu_layout
+abc_list_menu_item_checkbox
+abc_list_menu_item_icon
+abc_list_menu_item_layout
+abc_list_menu_item_radio
+!abc_popup_menu_header_item_layout
+abc_popup_menu_item_layout
+abc_screen_content_include
+abc_screen_simple
+%abc_screen_simple_overlay_action_mode
+abc_screen_toolbar
+$abc_search_dropdown_item_icons_2line
+abc_search_view
+abc_select_dialog_material
+abc_tooltip
+design_bottom_navigation_item
+design_bottom_sheet_dialog
+design_layout_snackbar
+design_layout_snackbar_include
+design_layout_tab_icon
+design_layout_tab_text
 design_menu_item_action_area
-!design_menu_item_action_area_stub
-design_menu_item_text
-design_navigation_view
-
-dimensions
-direct
-disableHome
-
-edit_query
-end
-enterAlways
-enterAlwaysCollapsed
-exitUntilCollapsed
-expand_activities_button
-expanded_menu
-fill
-fill_horizontal
-fill_vertical
-filled
-fixed
-forever
-
-ghost_view
-gone
-group_divider
-groups
-home
-homeAsUp
-icon
-
-icon_group
-ifRoom
-image
-info
-	invisible
-italic
-$item_touch_helper_previous_elevation
-labeled
-
-largeLabel
-left
-line1
-line3
-listMode
-	list_item
-masked
-message
-middle
-mini
-mtrl_child_content_container
- mtrl_internal_children_alpha_tag
-multiply
-navigation_header_container
-never
-none
-normal
-notification_background
-notification_main_column
-"notification_main_column_container
-outline
-packed
-parallax
-parent
-parentPanel
-parent_matrix
-percent
-pin
-progress_circular
-progress_horizontal
-radio
-right
-
-right_icon
-
-right_side
-save
-save_image_matrix
-save_non_transition_alpha
-save_scale_type
-screen
-scroll
-scrollIndicatorDown
-scrollIndicatorUp
-
-scrollView
-
-scrollable
-search_badge
-
-search_bar
-search_button
-search_close_btn
-search_edit_frame
-search_go_btn
-search_mag_icon
-search_plate
-search_src_text
-search_voice_btn
-select_dialog_listview
-selected
-shortcut
-
-showCustom
-showHome
-	showTitle
-
-smallLabel
-snackbar_action
-snackbar_text
-snap
-snapMargins
-spacer
-split_action_bar
-spread
-spread_inside
-src_atop
-src_in
-src_over
-standard
-start
-stretch
-submenuarrow
-submit_area
-surfaceView
-tabMode
-tag_transition_group
-tag_unhandled_key_event_manager
-tag_unhandled_key_listeners
-text
-text2
-textSpacerNoButtons
-textSpacerNoTitle
-	textStart
-text_input_password_toggle
-textinput_counter
-textinput_error
-textinput_helper_text
-time
-title
-titleDividerNoCustom
-title_template
-toolbar
-top
-topPanel
-touch_outside
-transition_current_scene
-transition_layout_save
-transition_position
-transition_scene_layoutid_cache
-transition_transform
-uniform
-	unlabeled
-up
-useLogo
-view_offset_helper
-visible
-withText
-wrap
-wrap_content   @
+design_navigation_item
+design_navigation_item_header
+ design_navigation_item_separator
+ design_navigation_item_subheader
+design_navigation_menu
+design_navigation_menu_item
+design_text_input_password_icon
+mtrl_layout_snackbar
+mtrl_layout_snackbar_include
+notification_action
+notification_action_tombstone
+ notification_template_custom_big
+ notification_template_icon_group
+&notification_template_part_chronometer
+notification_template_part_time
+select_dialog_item_material
+"select_dialog_multichoice_material
+#select_dialog_singlechoice_material
+$support_simple_spinner_dropdown_item   F
  
  
 
 
 
- 
+
  
-
- 
-
- 
+ 
+
+	 
+ Ñ   20BR0X†Pº	Î€˜ðÀ>R
+0X†Pº	È‚˜ðÀ>R0X†Pº	®ƒ˜ðÀ>R0X†Pº	²ƒ˜ðÀ>R0X†Pº	´ƒ˜ðÀ>R0X†Pº	¶ƒ˜ðÀ>R0X†Pº	¸ƒ˜ðÀ>R0X†Pº	ºƒ˜ðÀ>R0X†Pº	¼ƒ˜ðÀ>R0X†Pº	¾ƒ˜ðÀ>R0X†Pº	Àƒ˜ðÀ>R0X†Pº	Âƒ˜ðÀ>R0X†Pº	š„˜ðÀ>R0X†Pº	¤„˜ðÀ>R0X†Pº	¦„˜ðÀ>R0X†Pº	¨„˜ðÀ>R0X†Pº	€…˜ðÀ>R0X†Pº	’…˜ðÀ>R0X†Pº	”…˜ðÀ>R0X†Pº	Ì†˜ðÀ>R0X†Pº	ˆ˜ðÀ>  ´
+android
+support
+graphics
+drawable
+R
+attr
+kotlin
+Any
+alpha
+Int
+coordinatorLayoutStyle
+font
+fontProviderAuthority
+fontProviderCerts
+fontProviderFetchStrategy
+fontProviderFetchTimeout
+fontProviderPackage
+fontProviderQuery
+	fontStyle
+fontVariationSettings
+
+fontWeight
+keylines
+layout_anchor
+layout_anchorGravity
+layout_behavior
+layout_dodgeInsetEdges
+layout_insetEdge
+layout_keyline
+statusBarBackground
+ttcIndex   :
+ 
+ 
+
+
+ 
+ 
+
+ 
+	 Ú   20	BR
+0
+X†Pº	€€ÈðÀ>R0
+X†Pº	‚€ÈðÀ>R0
+X†Pº	„€ÈðÀ>R0
+X†Pº	†€ÈðÀ>R0
+X†Pº	ˆ€ÈðÀ>R0
+X†Pº	Š€ÈðÀ>R0
+X†Pº	Œ€ÈðÀ>R0
+X†Pº	Ž€ÈðÀ>R0
+X†Pº	€ÈðÀ>R0
+X†Pº	’€ÈðÀ>R0
+X†Pº	”€ÈðÀ>R0
+X†Pº	–€ÈðÀ>R0
+X†Pº	˜€ÈðÀ>R0
+X†Pº	š€ÈðÀ>R0
+X†Pº	œ€ÈðÀ>  
+org
+
+tensorflow
+lite
+examples
+posenet
+lib
+R
+integer
+kotlin
+Any
+abc_config_activityDefaultDur
+Int
+abc_config_activityShortDur
+app_bar_elevation_anim_duration
+bottom_sheet_slide_duration
+cancel_button_image_alpha
+config_tooltipAnimTime
+design_snackbar_text_max_lines
+%design_tab_indicator_anim_duration_ms
+hide_password_duration
+mtrl_btn_anim_delay_ms
+mtrl_btn_anim_duration_ms
+mtrl_chip_anim_duration
+#mtrl_tab_indicator_anim_duration_ms
+show_password_duration
+#status_bar_notification_info_maxnum   F
+ 
+ 
+
+
+
+
+ 
+ 
+
+	 
+ 
