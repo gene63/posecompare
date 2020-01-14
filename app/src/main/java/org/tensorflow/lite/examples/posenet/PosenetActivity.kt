@@ -226,19 +226,18 @@ class PosenetActivity :
 
     val view: View = inflater!!.inflate(R.layout.activity_posenet, container, false)
 
+
+    /** mybool이 false일때 true, true일때 false로 바뀌면서 스위치 동작되게 함**/
+
     view.save.setOnClickListener { view ->
 
       copy = person
 
-      mybool = true
+      mybool = !mybool
 
     }
 
-    view.reset.setOnClickListener { view ->
 
-      mybool = false
-
-    }
 
     // Return the fragment view/layout
     return view

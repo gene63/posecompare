@@ -14,6 +14,8 @@
  limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -27,26 +29,40 @@
       android:layout_alignParentTop="true"/>
 
 
-
-    <android.support.v7.widget.Toolbar
+  <android.support.v7.widget.Toolbar
       android:id="@+id/toolbar"
       android:layout_width="match_parent"
       android:layout_height="?attr/actionBarSize"
       android:layout_alignParentTop="true"
+      android:layout_marginTop="-1dp"
       android:background="@color/semi_transparent">
 
-      <Button
-          android:id="@+id/save"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="save" />
-
-      <Button
-          android:id="@+id/reset"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="reset" />
 
   </android.support.v7.widget.Toolbar>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+    <Switch
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:showText="true"
+        android:switchMinWidth="100dp"
+        android:switchTextAppearance="@style/switch_style"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="20dp"
+        android:thumb="@drawable/switch_btn_selector"
+        android:track="@drawable/switch_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
