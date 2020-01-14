@@ -66,6 +66,7 @@ import kotlin.math.abs
 import org.tensorflow.lite.examples.posenet.lib.BodyPart
 import org.tensorflow.lite.examples.posenet.lib.Person
 import org.tensorflow.lite.examples.posenet.lib.Posenet
+import kotlin.math.pow
 
 class PosenetActivity :
   Fragment(),
@@ -232,12 +233,8 @@ class PosenetActivity :
     view.save.setOnClickListener { view ->
 
       copy = person
-
       mybool = !mybool
-
     }
-
-
 
     // Return the fragment view/layout
     return view
@@ -571,7 +568,53 @@ class PosenetActivity :
     val right: Int
     val top: Int
     val bottom: Int
-    val score = 100.0 - Math.abs(100 * person.score - 100 * copy.score)
+    val score : Double
+    /** score 계산 **/
+    fun calculateScore(person:Person, copy:Person): Int {
+
+      var diff = 0
+
+      if (0 == person.keyPoints.size || 0 == copy.keyPoints.size) {return 0}
+
+      for (i in person.keyPoints.indices) {
+
+
+        if (person.keyPoints[i].bodyPart.equals(BodyPart.NOSE) || person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_EYE) ||
+          person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_EYE) || person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_EAR) || person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_EAR)
+                ) {
+
+          val eachDiff =
+            (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble()
+          diff = diff + eachDiff.pow(2).toInt()
+
+        } else if (person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_WRIST) || person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_WRIST)){
+
+          val eachDiff = (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble()
+          diff = diff + eachDiff.toInt()
+
+        } else if (person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_HIP) || person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_HIP)){
+
+          val eachDiff =
+            (person.keyPoints[i].position.x - copy.keyPoints[i].position.x).toDouble().pow(2) +
+                    (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble().pow(2)
+          diff = diff + eachDiff.pow(0.3).toInt()
+
+        } else{
+
+
+          val eachDiff =
+            (person.keyPoints[i].position.x - copy.keyPoints[i].position.x).toDouble().pow(2) +
+                    (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble().pow(2)
+          diff = diff + eachDiff.pow(0.5).toInt()
+        }
+      }
+
+
+      return diff/(person.keyPoints.size)
+    }
+    val difference = calculateScore(person, copy).toDouble()
+    score = (1800.div(difference.pow(1.8)+1800))*100
+
 
     if (canvas.height > canvas.width) {
       screenWidth = canvas.width
@@ -630,7 +673,7 @@ class PosenetActivity :
 
     /**고정 할 자세 그릴 컬러 지정**/
     if(mybool) {
-      if (score > 90.00) {
+      if (score > 85.00) {
         setPaintGREEN()
       } else if (score > 75.00) {
         setPaintYELLOW()
