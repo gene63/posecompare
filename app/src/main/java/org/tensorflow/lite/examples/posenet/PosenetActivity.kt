@@ -657,8 +657,8 @@ class PosenetActivity :
         } else if (person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_SHOULDER) || person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_SHOULDER)){
 
           val eachDiff = (person.keyPoints[i].position.x - copy.keyPoints[i].position.x).toDouble().pow(1.8) +
-                  (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble().pow(2.2)
-          diff = diff + eachDiff.pow(0.6).toInt()
+                  (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble().pow(2.3)
+          diff = diff + eachDiff.pow(0.7).toInt()
 
         } else{
 

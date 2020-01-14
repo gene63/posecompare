@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\posenet\\build\\intermediates\\res\\merged\\release\\interpolator-v21\\mtrl_linear_out_slow_in.xml",
+        "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\020c186ba6085b8449c3aa46095cc7ec\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\posenet\\build\\intermediates\\res\\merged\\release\\interpolator-v21\\mtrl_fast_out_slow_in.xml",
+        "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\020c186ba6085b8449c3aa46095cc7ec\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\posenet\\build\\intermediates\\res\\merged\\release\\interpolator-v21\\mtrl_fast_out_linear_in.xml",
+        "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\020c186ba6085b8449c3aa46095cc7ec\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
+    }
+]
