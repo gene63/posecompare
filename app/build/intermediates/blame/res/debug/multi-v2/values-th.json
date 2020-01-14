@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
+            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\f250dcea7259ca19b7de14ca67efb446\\res\\values-th\\values-th.xml",

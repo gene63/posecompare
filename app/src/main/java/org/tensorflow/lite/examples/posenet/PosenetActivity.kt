@@ -74,6 +74,7 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
 import kotlin.concurrent.timer
+import kotlin.math.absoluteValue
 import kotlin.math.pow
 
 class PosenetActivity :
@@ -605,7 +606,9 @@ class PosenetActivity :
 
           val eachDiff =
             (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble()
-          diff = diff + eachDiff.pow(2).toInt()
+          Log.d("diffOfFace", eachDiff.toString())
+          if (eachDiff < 30) { diff = diff + abs(eachDiff).toInt()} else{diff = diff + (abs(eachDiff)-20).pow(2).toInt()}
+
 
         } else if (person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_WRIST) || person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_WRIST)){
 
@@ -618,6 +621,12 @@ class PosenetActivity :
             (person.keyPoints[i].position.x - copy.keyPoints[i].position.x).toDouble().pow(2) +
                     (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble().pow(2)
           diff = diff + eachDiff.pow(0.3).toInt()
+
+        } else if (person.keyPoints[i].bodyPart.equals(BodyPart.LEFT_SHOULDER) || person.keyPoints[i].bodyPart.equals(BodyPart.RIGHT_SHOULDER)){
+
+          val eachDiff = (person.keyPoints[i].position.x - copy.keyPoints[i].position.x).toDouble().pow(1.8) +
+                  (person.keyPoints[i].position.y - copy.keyPoints[i].position.y).toDouble().pow(2.2)
+          diff = diff + eachDiff.pow(0.6).toInt()
 
         } else{
 
