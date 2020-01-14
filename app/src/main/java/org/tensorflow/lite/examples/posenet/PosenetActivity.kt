@@ -97,6 +97,9 @@ class PosenetActivity :
   /** Paint class holds the style and color information to draw geometries,text and bitmaps. */
   private var paint = Paint()
 
+  /**하단 글자를 위한 페인트**/
+  private  var charPaint = Paint()
+
 
   /** A shape for extracting frame data.   */
   private val PREVIEW_WIDTH = 640
@@ -528,6 +531,13 @@ class PosenetActivity :
     paint.textSize = 80.0f
     paint.strokeWidth = 8.0f
   }
+
+  private fun setcharPaintWHITE(){
+    charPaint.color = Color.WHITE
+    charPaint.textSize = 80.0f
+    charPaint.strokeWidth = 8.0f
+    }
+
   private fun setPaintWHITE() {
     paint.color = Color.WHITE
     paint.textSize = 80.0f
@@ -540,6 +550,17 @@ class PosenetActivity :
     paint.strokeWidth = 8.0f
   }
 
+  private fun setPaintGRAY() {
+    paint.color = Color.GRAY
+    paint.textSize = 80.0f
+    paint.strokeWidth = 8.0f
+  }
+
+  private fun setPaintYELLOW() {
+    paint.color = Color.YELLOW
+    paint.textSize = 80.0f
+    paint.strokeWidth = 8.0f
+  }
 
   /** Draw bitmap on Canvas.   */
   private fun draw(canvas: Canvas, person: Person, bitmap: Bitmap) {
@@ -551,6 +572,8 @@ class PosenetActivity :
     val right: Int
     val top: Int
     val bottom: Int
+    val score = 100.0 - Math.abs(100 * person.score - 100 * copy.score)
+
     if (canvas.height > canvas.width) {
       screenWidth = canvas.width
       screenHeight = canvas.width
@@ -565,17 +588,11 @@ class PosenetActivity :
     right = left + screenWidth
     bottom = top + screenHeight
 
-    setPaintRED()
-    if(mybool) {
-      if (Math.abs(100 * person.score - 100 * copy.score) < 5.00) {
-        setPaintGREEN()
-      } else if (Math.abs(100 * person.score - 100 * copy.score) < 15.00) {
-        setPaintBLUE()
-      } else {
-        setPaintRED()
-      }
-    }
 
+    /**변하는 자세를 그릴 컬러 지정**/
+    setPaintGRAY()
+
+    /**실시간 변하는 자세 그리기**/
     canvas.drawBitmap(
       bitmap,
       Rect(0, 0, bitmap.width, bitmap.height),
@@ -612,56 +629,72 @@ class PosenetActivity :
     }
 
 
-
-      if(mybool) {
-        for (keyPoint in copy.keyPoints) {
-          if (keyPoint.score > minConfidence) {
-            val position = keyPoint.position
-            val adjustedX: Float = position.x.toFloat() * widthRatio + left
-            val adjustedY: Float = position.y.toFloat() * heightRatio + top
-            canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint)
-          }
-        }
-
-        for (line in bodyJoints) {
-          if (
-            (copy.keyPoints[line.first.ordinal].score > minConfidence) and
-            (copy.keyPoints[line.second.ordinal].score > minConfidence)
-          ) {
-            canvas.drawLine(
-              copy.keyPoints[line.first.ordinal].position.x.toFloat() * widthRatio + left,
-              copy.keyPoints[line.first.ordinal].position.y.toFloat() * heightRatio + top,
-              copy.keyPoints[line.second.ordinal].position.x.toFloat() * widthRatio + left,
-              copy.keyPoints[line.second.ordinal].position.y.toFloat() * heightRatio + top,
-              paint
-            )
-          }
-        }
+    /**고정 할 자세 그릴 컬러 지정**/
+    if(mybool) {
+      if (score > 90.00) {
+        setPaintGREEN()
+      } else if (score > 75.00) {
+        setPaintYELLOW()
+      } else {
+        setPaintRED()
       }
+    }
+    else{
+      setPaintWHITE()
+    }
 
+    /**고정 할 자세 그리기**/
+    if(mybool) {
+       for (keyPoint in copy.keyPoints) {
+         if (keyPoint.score > minConfidence) {
+           val position = keyPoint.position
+           val adjustedX: Float = position.x.toFloat() * widthRatio + left
+           val adjustedY: Float = position.y.toFloat() * heightRatio + top
+           canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint)
+         }
+       }
+        for (line in bodyJoints) {
+         if (
+           (copy.keyPoints[line.first.ordinal].score > minConfidence) and
+           (copy.keyPoints[line.second.ordinal].score > minConfidence)
+         ) {
+           canvas.drawLine(
+             copy.keyPoints[line.first.ordinal].position.x.toFloat() * widthRatio + left,
+             copy.keyPoints[line.first.ordinal].position.y.toFloat() * heightRatio + top,
+             copy.keyPoints[line.second.ordinal].position.x.toFloat() * widthRatio + left,
+             copy.keyPoints[line.second.ordinal].position.y.toFloat() * heightRatio + top,
+              paint
+           )
+         }
+       }
+     }
+
+    /** 하단 글자색 하얀색으로 지정**/
+    setcharPaintWHITE()
+
+    /**하단 글자 띄우기**/
     if(mybool) {
       canvas.drawText(
-        "Score: %.2f".format(Math.abs(100 * person.score - 100 * copy.score)),
+        "Score: %.2f".format(score),
         (15.0f * widthRatio),
         (30.0f * heightRatio + bottom),
-        paint
+        charPaint
       )
     }
     else {
       canvas.drawText(
-        "Score: %.2f".format(0.00),
+        "Score: %s".format("바른자세를 입력하세요."),
         (15.0f * widthRatio),
         (30.0f * heightRatio + bottom),
-        paint
+        charPaint
       )
     }
-
-    canvas.drawText(
-      "Device: %s".format(posenet.device),
-      (15.0f * widthRatio),
-      (50.0f * heightRatio + bottom),
-      paint
-    )
+//    canvas.drawText(
+//      "Device: %s".format(posenet.device),
+//      (15.0f * widthRatio),
+//      (50.0f * heightRatio + bottom),
+//      paint
+//    )
     canvas.drawText(
       "Time: %.2f ms".format(posenet.lastInferenceTimeNanos * 1.0f / 1_000_000),
       (15.0f * widthRatio),

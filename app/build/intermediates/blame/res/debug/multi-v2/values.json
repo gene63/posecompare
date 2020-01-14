@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\c4be962ad291345217cae826af1371eb\\res\\values\\values.xml",
@@ -37,25 +37,6 @@
                         "startOffsets": "28911,29241,29380,29427,29482,30076,30130,30182,30231,30292",
                         "endColumns": "39,42,46,54,44,53,51,48,60,49",
                         "endOffsets": "28946,29279,29422,29477,29522,30125,30177,30226,30287,30337"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,9",
-                        "startColumns": "2,2",
-                        "startOffsets": "53,356",
-                        "endLines": "8,15",
-                        "endColumns": "10,10",
-                        "endOffsets": "352,718"
-                    },
-                    "to": {
-                        "startLines": "603,2032",
-                        "startColumns": "4,4",
-                        "startOffsets": "37644,130261",
-                        "endLines": "608,2038",
-                        "endColumns": "10,10",
-                        "endOffsets": "37938,130617"
                     }
                 },
                 {
@@ -135,7 +116,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
                         "startLines": "17,18",
                         "startColumns": "2,2",
@@ -171,7 +152,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "16,20,18,21,17,19",
                         "startColumns": "2,2,2,2,2,2",
@@ -190,7 +171,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,9",
+                        "startColumns": "2,2",
+                        "startOffsets": "53,356",
+                        "endLines": "8,15",
+                        "endColumns": "10,10",
+                        "endOffsets": "352,718"
+                    },
+                    "to": {
+                        "startLines": "603,2032",
+                        "startColumns": "4,4",
+                        "startOffsets": "37644,130261",
+                        "endLines": "608,2038",
+                        "endColumns": "10,10",
+                        "endOffsets": "37938,130617"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "19,17,18,20,21",
                         "startColumns": "2,2,2,2,2",
