@@ -95,8 +95,8 @@ class PosenetActivity :
   private val circleRadius = 8.0f
   private var mybool = false
   /** Paint class holds the style and color information to draw geometries,text and bitmaps. */
-  private var paint1 = Paint()
-  private var paint2 = Paint()
+  private var paint = Paint()
+
 
   /** A shape for extracting frame data.   */
   private val PREVIEW_WIDTH = 640
@@ -518,26 +518,26 @@ class PosenetActivity :
 
   /** Set the paint color and size.    */
   private fun setPaintRED() {
-    paint1.color = Color.RED
-    paint1.textSize = 80.0f
-    paint1.strokeWidth = 8.0f
+    paint.color = Color.RED
+    paint.textSize = 80.0f
+    paint.strokeWidth = 8.0f
   }
 
   private fun setPaintGREEN() {
-    paint2.color = Color.GREEN
-    paint2.textSize = 80.0f
-    paint2.strokeWidth = 8.0f
+    paint.color = Color.GREEN
+    paint.textSize = 80.0f
+    paint.strokeWidth = 8.0f
   }
   private fun setPaintWHITE() {
-    paint2.color = Color.WHITE
-    paint2.textSize = 80.0f
-    paint2.strokeWidth = 8.0f
+    paint.color = Color.WHITE
+    paint.textSize = 80.0f
+    paint.strokeWidth = 8.0f
   }
 
   private fun setPaintBLUE() {
-    paint2.color = Color.BLUE
-    paint2.textSize = 80.0f
-    paint2.strokeWidth = 8.0f
+    paint.color = Color.BLUE
+    paint.textSize = 80.0f
+    paint.strokeWidth = 8.0f
   }
 
 
@@ -565,13 +565,22 @@ class PosenetActivity :
     right = left + screenWidth
     bottom = top + screenHeight
 
-    if(mybool==false){ setPaintRED() } else {setPaintWHITE()}
+    setPaintRED()
+    if(mybool) {
+      if (Math.abs(100 * person.score - 100 * copy.score) < 5.00) {
+        setPaintGREEN()
+      } else if (Math.abs(100 * person.score - 100 * copy.score) < 15.00) {
+        setPaintBLUE()
+      } else {
+        setPaintRED()
+      }
+    }
 
     canvas.drawBitmap(
       bitmap,
       Rect(0, 0, bitmap.width, bitmap.height),
       Rect(left, top, right, bottom),
-      paint1
+      paint
     )
 
     val widthRatio = screenWidth.toFloat() / MODEL_WIDTH
@@ -583,7 +592,7 @@ class PosenetActivity :
         val position = keyPoint.position
         val adjustedX: Float = position.x.toFloat() * widthRatio + left
         val adjustedY: Float = position.y.toFloat() * heightRatio + top
-        canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint1)
+        canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint)
       }
     }
 
@@ -597,17 +606,20 @@ class PosenetActivity :
           person.keyPoints[line.first.ordinal].position.y.toFloat() * heightRatio + top,
           person.keyPoints[line.second.ordinal].position.x.toFloat() * widthRatio + left,
           person.keyPoints[line.second.ordinal].position.y.toFloat() * heightRatio + top,
-          paint1
+          paint
         )
       }
     }
+
+
+
       if(mybool) {
         for (keyPoint in copy.keyPoints) {
           if (keyPoint.score > minConfidence) {
             val position = keyPoint.position
             val adjustedX: Float = position.x.toFloat() * widthRatio + left
             val adjustedY: Float = position.y.toFloat() * heightRatio + top
-            canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint2)
+            canvas.drawCircle(adjustedX, adjustedY, circleRadius, paint)
           }
         }
 
@@ -621,7 +633,7 @@ class PosenetActivity :
               copy.keyPoints[line.first.ordinal].position.y.toFloat() * heightRatio + top,
               copy.keyPoints[line.second.ordinal].position.x.toFloat() * widthRatio + left,
               copy.keyPoints[line.second.ordinal].position.y.toFloat() * heightRatio + top,
-              paint2
+              paint
             )
           }
         }
@@ -632,7 +644,7 @@ class PosenetActivity :
         "Score: %.2f".format(Math.abs(100 * person.score - 100 * copy.score)),
         (15.0f * widthRatio),
         (30.0f * heightRatio + bottom),
-        paint1
+        paint
       )
     }
     else {
@@ -640,7 +652,7 @@ class PosenetActivity :
         "Score: %.2f".format(0.00),
         (15.0f * widthRatio),
         (30.0f * heightRatio + bottom),
-        paint1
+        paint
       )
     }
 
@@ -648,13 +660,13 @@ class PosenetActivity :
       "Device: %s".format(posenet.device),
       (15.0f * widthRatio),
       (50.0f * heightRatio + bottom),
-      paint1
+      paint
     )
     canvas.drawText(
       "Time: %.2f ms".format(posenet.lastInferenceTimeNanos * 1.0f / 1_000_000),
       (15.0f * widthRatio),
       (70.0f * heightRatio + bottom),
-      paint1
+      paint
     )
 
     // Draw!
