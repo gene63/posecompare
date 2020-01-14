@@ -50,14 +50,10 @@ import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
 import android.util.Log
+import android.util.Log.d
 import android.util.Size
 import android.util.SparseIntArray
-import android.view.LayoutInflater
-import android.view.Surface
-import android.view.SurfaceHolder
-import android.view.SurfaceView
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_posenet.*
@@ -111,8 +107,14 @@ class PosenetActivity :
   private  var charPaint = Paint()
 
   /**현재시간 변수 선언**/
-    var starttime = 0
+  var starttime = 0
   var endtime = 0
+
+  /**평균 위한 점수 총합**/
+  var totalscore = 0.0
+
+  /**평균 위한 횟수 총합**/
+  var count = 0
 
   /** A shape for extracting frame data.   */
   private val PREVIEW_WIDTH = 640
@@ -248,6 +250,7 @@ class PosenetActivity :
 
       mybool = !mybool
       if(mybool){
+        //스위치가 on으로 바뀌었다면
         val tz = TimeZone.getTimeZone("Asia/Seoul")
         val gc = GregorianCalendar(tz)
         var hour= gc.get(GregorianCalendar.HOUR).toInt()
@@ -255,7 +258,36 @@ class PosenetActivity :
         var sec = gc.get(GregorianCalendar.SECOND).toInt()
         starttime = hour*3600 + min*60 + sec
       }
+      else{
+        //스우치가 off로 바뀌었다면
+        val tz = TimeZone.getTimeZone("Asia/Seoul")
+        val gc = GregorianCalendar(tz)
+        var hour= gc.get(GregorianCalendar.HOUR).toInt()
+        var min = gc.get(GregorianCalendar.MINUTE).toInt()
+        var sec = gc.get(GregorianCalendar.SECOND).toInt()
+        endtime = hour*3600 + min*60 + sec
+        val totaltime = endtime-starttime
 
+        //Alert 띄우기!
+        val builder = AlertDialog.Builder(ContextThemeWrapper(this.context, R.style.Theme_AppCompat_Light_Dialog))
+        builder.setTitle("수고하셨습니다!")
+        builder.setMessage((totaltime/3600).toString() + "시간" + ((totaltime%3600)/60).toString() + "분" + (totaltime%60).toString() + "초 동안 당신의 평균 자세 점수는\n"+ "%.2f".format(totalscore.div(count))+"점 입니다!") //평균
+
+        builder.setPositiveButton("확인") { _, _ ->
+          Log.d("alert ok","2")
+        }
+        builder.setNegativeButton("취소") { _, _ ->
+          Log.d("alert cancel","3")
+        }
+
+        builder.show()
+
+        //전역변수들 초기화
+        totalscore=0.0
+        count=0
+        starttime=0
+        endtime=0
+      }
     }
     // Return the fragment view/layout
     return view
@@ -644,6 +676,8 @@ class PosenetActivity :
     val difference = calculateScore(person, copy).toDouble()
     score = (1800.div(difference.pow(1.8)+1800))*100
 
+    totalscore += score
+    count++
 
     if (canvas.height > canvas.width) {
       screenWidth = canvas.width

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "619431075804",
+    "firebase_url": "https://posecompare1-4c9e4.firebaseio.com",
+    "project_id": "posecompare1-4c9e4",
+    "storage_bucket": "posecompare1-4c9e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619431075804:android:f893e3a5ba4936cf273919",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.posenet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619431075804-03pb3rl2bahgkbn8k69sp5tv4trb1k30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0KyY5LihSZoRlGOPSQ2pRJLlayfUp07k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619431075804-03pb3rl2bahgkbn8k69sp5tv4trb1k30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
