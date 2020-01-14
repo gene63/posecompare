@@ -410,8 +410,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/posenet/PosenetActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="761" column="25" lean-forward="true" selection-start-line="761" selection-start-column="25" selection-end-line="761" selection-end-column="25" />
+            <state relative-caret-position="273">
+              <caret line="759" column="13" selection-start-line="759" selection-start-column="13" selection-end-line="759" selection-end-column="13" />
               <folding>
                 <element signature="e#677#2797#0" expanded="true" />
                 <element signature="e#10945#10983#1" expanded="true" />
@@ -441,9 +441,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>estimate</find>
-      <find>numkeyp</find>
-      <find>true</find>
       <find>flashsuppor</find>
       <find>on</find>
       <find>oncreateview</find>
@@ -471,6 +468,9 @@
       <find>mediap</find>
       <find>me</find>
       <find>mediaplayer</find>
+      <find>mybool2</find>
+      <find>create</find>
+      <find>mp3bool</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -694,6 +694,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21428572" />
@@ -1033,10 +1034,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/media/MediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="945" column="30" selection-start-line="945" selection-start-column="30" selection-end-line="945" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/posenet/PosenetActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="761" column="25" lean-forward="true" selection-start-line="761" selection-start-column="25" selection-end-line="761" selection-end-column="25" />
+        <state relative-caret-position="273">
+          <caret line="759" column="13" selection-start-line="759" selection-start-column="13" selection-end-line="759" selection-end-column="13" />
           <folding>
             <element signature="e#677#2797#0" expanded="true" />
             <element signature="e#10945#10983#1" expanded="true" />
