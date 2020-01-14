@@ -1027,6 +1027,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable sittingpose
 drawable switch_background
 drawable switch_btn_selector
 drawable switch_off_shape

@@ -17,6 +17,7 @@
 package org.tensorflow.lite.examples.posenet
 
 import android.Manifest
+import android.annotation.TargetApi
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
@@ -40,6 +41,7 @@ import android.hardware.camera2.TotalCaptureResult
 import android.media.Image
 import android.media.ImageReader
 import android.media.ImageReader.OnImageAvailableListener
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
@@ -66,6 +68,12 @@ import kotlin.math.abs
 import org.tensorflow.lite.examples.posenet.lib.BodyPart
 import org.tensorflow.lite.examples.posenet.lib.Person
 import org.tensorflow.lite.examples.posenet.lib.Posenet
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.*
+import kotlin.concurrent.timer
 import kotlin.math.pow
 
 class PosenetActivity :
@@ -101,6 +109,9 @@ class PosenetActivity :
   /**하단 글자를 위한 페인트**/
   private  var charPaint = Paint()
 
+  /**현재시간 변수 선언**/
+    var starttime = 0
+  var endtime = 0
 
   /** A shape for extracting frame data.   */
   private val PREVIEW_WIDTH = 640
@@ -233,9 +244,18 @@ class PosenetActivity :
     view.save.setOnClickListener { view ->
 
       copy = person
-      mybool = !mybool
-    }
 
+      mybool = !mybool
+      if(mybool){
+        val tz = TimeZone.getTimeZone("Asia/Seoul")
+        val gc = GregorianCalendar(tz)
+        var hour= gc.get(GregorianCalendar.HOUR).toInt()
+        var min = gc.get(GregorianCalendar.MINUTE).toInt()
+        var sec = gc.get(GregorianCalendar.SECOND).toInt()
+        starttime = hour*3600 + min*60 + sec
+      }
+
+    }
     // Return the fragment view/layout
     return view
   }
@@ -530,7 +550,7 @@ class PosenetActivity :
 
   private fun setcharPaintWHITE(){
     charPaint.color = Color.WHITE
-    charPaint.textSize = 80.0f
+    charPaint.textSize = 65.0f
     charPaint.strokeWidth = 8.0f
     }
 
@@ -725,23 +745,30 @@ class PosenetActivity :
     }
     else {
       canvas.drawText(
-        "Score: %s".format("바른자세를 입력하세요."),
+        "%s".format("바른자세로 앉은 뒤 스위치를 누르세요."),
         (15.0f * widthRatio),
         (30.0f * heightRatio + bottom),
         charPaint
       )
     }
-//    canvas.drawText(
-//      "Device: %s".format(posenet.device),
-//      (15.0f * widthRatio),
-//      (50.0f * heightRatio + bottom),
-//      paint
-//    )
+
+    /**시간 계산**/
+    var totaltime = 0
+    if(mybool){
+      val tz = TimeZone.getTimeZone("Asia/Seoul")
+      val gc = GregorianCalendar(tz)
+      var hour= gc.get(GregorianCalendar.HOUR).toInt()
+      var min = gc.get(GregorianCalendar.MINUTE).toInt()
+      var sec = gc.get(GregorianCalendar.SECOND).toInt()
+      endtime = hour*3600 + min*60 + sec
+      totaltime = endtime - starttime
+    }
+
     canvas.drawText(
-      "Time: %.2f ms".format(posenet.lastInferenceTimeNanos * 1.0f / 1_000_000),
+      "Time: %d min %d sec".format(totaltime/60,totaltime%60),
       (15.0f * widthRatio),
-      (70.0f * heightRatio + bottom),
-      paint
+      (50.0f * heightRatio + bottom),
+      charPaint
     )
 
     // Draw!
