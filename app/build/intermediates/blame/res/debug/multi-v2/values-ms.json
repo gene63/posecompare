@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\q\\StudioProjects\\posecompare1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms\\values-ms.xml",
+            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\posecompare\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms\\values-ms.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\c4be962ad291345217cae826af1371eb\\res\\values-ms\\values-ms.xml",

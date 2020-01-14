@@ -1027,6 +1027,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable switch_background
+drawable switch_btn_selector
+drawable switch_off_shape
+drawable switch_on_shape
 drawable tfl2_logo
 drawable tfl2_logo_dark
 drawable tooltip_frame_dark
@@ -1151,7 +1155,6 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
-id reset
 id right
 id right_icon
 id right_side
@@ -1871,6 +1874,7 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
+style switch_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
