@@ -1,4 +1,4 @@
-# Android app to maintain a correct posture using TensorFlow Lite PoseNet Android Demo
+# Android app for correct sitting posture using TensorFlow Lite PoseNet Demo
 ### Building
 
 * Clone the repository
